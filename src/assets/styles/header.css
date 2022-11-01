@@ -1,0 +1,26 @@
+.banner {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/backgrounds/img-header.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #FD9985;
+  color: white;
+  width: 220px;
+  height: 55px;
+  border-radius: 0;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.btn-submit:hover {
+  box-shadow: 3px 3px 6px #999;
+}

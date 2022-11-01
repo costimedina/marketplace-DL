@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+  background-color: #F9F4F2;
+}

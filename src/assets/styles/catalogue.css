@@ -1,0 +1,18 @@
+.grilla-plantas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#form1Catalogue {
+  border: 1px solid #F5B85D;
+  width: 400px;
+  margin-left: 8rem;
+}
+
+#select1Catalogue {
+  border: 1px solid #F5B85D;
+  width: 400px;
+  margin-right: 8rem;
+}

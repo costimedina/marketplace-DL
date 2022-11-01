@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Lourdes Jiménez",
+      "position": "Arquitecta paisajista",
+      "contact": "www.linkedin.com",
+      "img": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg"
+    },
+    {
+      "name": "Macarena Valenzuela",
+      "position": "Ecóloga paisajista",
+      "contact": "www.linkedin.com",
+      "img": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg"
+    },
+    {
+      "name": "Pedro Alvarez",
+      "position": "Jardinero",
+      "contact": "www.linkedin.com",
+      "img": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg"
+    },
+    {
+      "name": "Susana Maartinez  ",
+      "position": "Agrónoma",
+      "contact": "www.linkedin.com",
+      "img": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg"
+    },
+    {
+      "name": "Teresa Arriagada",
+      "position": "Jardinera",
+      "contact": "www.linkedin.com",
+      "img": "https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/articulos/perfil-resilencia.jpg"
+    }
+
+]

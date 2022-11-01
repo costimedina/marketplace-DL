@@ -1,0 +1,30 @@
+#form1Login {
+    border: 1px solid #F5B85D;
+    width: 600px;
+}
+
+.login {
+    background-color: #FD9985;
+    color: #F9F4F2;
+    width: 180px;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+}
+
+.login:hover {
+    box-shadow: 3px 3px 6px #999;
+}
+
+.anchorPassword {
+    color: #212225;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.anchorLogin {
+    color: #212225;
+    font-size: 16px;
+    font-weight: 700
+}
