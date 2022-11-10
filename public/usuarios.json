@@ -1,8 +1,43 @@
-[
-    {
-      "id": "Acacia caven",
-      "name-user": "P001",
-      "mail": "miau",
-      "password": "P001"
-    }
-]
+{
+  "usuarios":[
+        {
+            "id": 1,
+            "apellidoPaterno": "García",
+            "apellidoMaterno": "Ramírez",
+            "nombre": "Carlos",
+            "userName": "cgarcia",
+            "email": "cgarcia@gmail.com",
+            "password": "1234"
+        },
+
+        {
+            "id": 2,
+            "apellidoPaterno": "Fernandez",
+            "apellidoMaterno": "Flores",
+            "nombre": "Roberto",
+            "userName": "rfernandez",
+            "email": "rfernandez@gmail.com",
+            "password": "5678"
+        },
+
+        {
+            "id": 3,
+            "apellidoPaterno": "Santander",
+            "apellidoMaterno": "Villegas",
+            "nombre": "Marta",
+            "userName": "msantander",
+            "email": "msantander@gmail.com",
+            "password": "9101"
+        },
+
+        {
+            "id": 4,
+            "apellidoPaterno": "Miraflores",
+            "apellidoMaterno": "Lavin",
+            "nombre": "Laura",
+            "userName": "lmiraflores",
+            "email": "lmiraflores@gmail.com",
+            "password": "2345"
+        }
+    ]
+}

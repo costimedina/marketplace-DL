@@ -9,13 +9,11 @@ function PublicFooter() {
 
   return (
 
-    <Navbar
-      className="text-center text-lg-start text-muted"
-    >
+    <Navbar className="text-center text-lg-start text-muted">
 
       <Container className="text-center text-lg-start">
 
-        <div className="container text-center text-md-start mt-5">
+        <div className="container text-center text-start mt-5">
           <div className="row mt-3">
 
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -33,7 +31,7 @@ function PublicFooter() {
               </h6>
               <NavLink
                 end className={setActiveClass} to="OurTeam">
-                <i class="fa-solid fa-people-group fa-2x text-muted"></i>
+                <i className="fa-solid fa-people-group fa-2x text-muted"></i>
               </NavLink>
             </div>
 
@@ -50,9 +48,10 @@ function PublicFooter() {
               <h6 className="fw-bold mb-4">
                 CONÉCTATE
               </h6>
-              <a href="www.linkedin.com" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
-              <a href="www.twitter.com" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
-              <a href="www.facebook.com" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+              <a href="www.linkedin.com" className="me-4 text-reset"><i className="fab fa-linkedin"></i></a>
+              <a href="www.twitter.com" className="me-4 text-reset"><i className="fab fa-twitter"></i></a>
+              <a href="www.facebook.com" className="me-4 text-reset"><i className="fab fa-facebook-f"></i></a>
+              <a href="www.spotify.com" className="text-reset"><i className="fa-solid fa-podcast"></i></a>
             </div>
 
           </div>

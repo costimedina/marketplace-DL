@@ -1,6 +1,10 @@
 #form1Login {
     border: 1px solid #F5B85D;
-    width: 600px;
+    width: 400px;
+}
+
+label.form-labelLogin{
+    margin-top: 10px;
 }
 
 .login {

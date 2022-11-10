@@ -12,65 +12,71 @@ function SignUp() {
 
   return (
     <>
-      <div className="mb-2 mt-5">
+      <div className="mb-4 mt-5">
         <h2>CREA TU CUENTA AHORA</h2>
       </div>
       <div>
         <img
+          className="mb-4"
           height="180px"
           src={greenLogo}
           alt="certificacion"
         />
       </div>
 
-      <Container className="d-flex justify-content-center px-5 mt-4 mb-5">
+      <Container className="d-flex justify-content-center">
         <Form>
 
           <div className="form-outline mb-4">
             <input type="email" id="form1SignUp" className="form-control" />
-            <label className="form-label" for="form3Example3">Nombres</label>
+            <label className="form-labelSign">Nombre</label>
           </div>
 
           <div className="form-outline mb-4">
             <input type="email" id="form1SignUp" className="form-control" />
-            <label className="form-label" for="form3Example3">Apellidos</label>
+            <label className="form-labelSign">Apellido paterno</label>
           </div>
 
           <div className="form-outline mb-4">
             <input type="email" id="form1SignUp" className="form-control" />
-            <label className="form-label" for="form3Example3">Email</label>
+            <label className="form-labelSign">Apellido materno</label>
           </div>
 
           <div className="form-outline mb-4">
+            <input type="email" id="form1SignUp" className="form-control" />
+            <label className="form-labelSign">Email</label>
+          </div>
+
+          <div className="form-outline mb-5">
             <input type="password" id="form1SignUp" className="form-control" />
-            <label className="form-label" for="form3Example4">Contraseña</label>
+            <label className="form-labelSign">Contraseña</label>
           </div>
 
           <div className="form-check d-flex justify-content-center mb-4">
             <input className="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-            <label className="form-check-label" for="form2Example33">
+            <label className="form-check-label">
               Subscríbete a nuestro newsletter
             </label>
           </div>
 
           <Link to="/Profile">
-            <button type="submit" className="signUp btn-primary btn-block mb-4">Únete</button>
+            <button type="buttom" className="signUp btn-primary btn-block mb-4">ÚNETE</button>
           </Link>
 
-          <div class="text-center">
-            <p>¿No eres miembro? <a className="anchorLogin"href="http://localhost:3000/SignUp">Regístrate</a></p>
+          <div className="text-center m-3">
+            <p>¿No eres miembro? <a className="anchorLogin" href="http://localhost:3000/SignUp">Regístrate aquí</a></p>
             <p>O ingresa por:</p>
 
-             <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
-              <i class="fab fa-facebook-f fa-2x"></i>
+            <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
+              <i className="fab fa-facebook-f fa-2x"></i>
             </button>
 
             <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
-              <i class="fab fa-google fa-2x"></i>
+              <i className="fab fa-google fa-2x"></i>
             </button>
 
             <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
-              <i class="fab fa-twitter fa-2x"></i>
+              <i className="fab fa-twitter fa-2x"></i>
             </button>
 
           </div>

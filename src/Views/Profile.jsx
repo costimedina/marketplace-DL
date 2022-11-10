@@ -31,22 +31,22 @@ function Profile() {
 
         <Form>
           <div className="form-outline mb-4">
-            <label className="form-label" id="perfil" for="form2Example1">Nombre</label>
+            <label className="form-label" id="perfil">Nombre</label>
             <input type="text" id="form1Profile" className="form-control" />
 
           </div>
           <div className="form-outline mb-4">
-            <label className="form-label" for="form2Example1">Correo electrónico</label>
+            <label className="form-label">Correo electrónico</label>
             <input type="email" id="form1Profile" className="form-control" />
 
           </div>
           <div className="form-outline mb-4">
-            <label className="form-label" for="form2Example1">Teléfono de contacto</label>
+            <label className="form-label">Teléfono de contacto</label>
             <input type="number " id="form1Profile" className="form-control" />
 
           </div>
           <div className="form-outline mb-4">
-            <label className="form-label " for="form2Example1">Dirección</label>
+            <label className="form-label">Dirección</label>
             <input type="text" id="form1Profile" className="form-control" />
           </div>
         </Form>

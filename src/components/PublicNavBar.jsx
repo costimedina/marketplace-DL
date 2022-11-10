@@ -15,13 +15,13 @@ function NavBar() {
   return (
 
     <Navbar
-    className="d-flex justify-content-between px-5"
-    variant="light"
-    style={{ background: "#212225" }}
-  >
-   
+      className="d-flex justify-content-between px-5"
+      variant="light"
+      style={{ background: "#212225" }}
+    >
+
       <NavLink end className={setActiveClass} to="/" >
-        <Navbar.Brand>
+        <Navbar.Brand className="d-flex px-5">
           <img
             width="80"
             src={blackLogo}
@@ -30,24 +30,19 @@ function NavBar() {
         </Navbar.Brand>
       </NavLink>
 
-      <Nav className="d-flex">
+      <Nav className="d-flex px-4">
 
         <NavLink end className={setActiveClass} to="LogIn">
-          <h5><i class="fa-sharp fa-solid fa-user"></i> Ingresar</h5>
+          <h5><i className="fa-sharp fa-solid fa-user"></i> Ingresar</h5>
         </NavLink>
-    
+
         <NavLink className={setActiveClass} to="SignUp">
-          <h5><i class="fa-sharp fa-solid fa-right-to-bracket"></i> Registrarse</h5>
-        </NavLink>
-     
-        <NavLink className={setActiveClass} to="Catalogue">
-          <h5><i class="fa-solid fa-leaf"></i> Catálogo</h5>
+          <h5><i className="fa-sharp fa-solid fa-right-to-bracket"></i> Registrarse</h5>
         </NavLink>
 
       </Nav>
-   
-  </Navbar>
-);
+    </Navbar>
+  );
 };
 
 export default NavBar;

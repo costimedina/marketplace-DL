@@ -1,23 +1,16 @@
-//STYLES
 
-//COMPONENTS
-import { useContext } from 'react';
-import { Container } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
-import PlantasContext from '../context/PlantasContext';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-//IMAGES 
+function ModalPlantDetails({ show, handleClose, planta }) {
 
-function PlantDetails() {
-  const { id } = useParams();
-  const { addToCart, plantasData } = useContext(PlantasContext);
-
-  const planta = plantasData.find((register) => register.id === +id);
-  console.log(planta);
 
   return (
-    <>
-      <Container className="d-flex justify-content-center px-5 mt-6 mb-5">
+    <Modal show={show} onHide={handleClose} animation={false}>
+      <Modal.Header closeButton>
+        <Modal.Title>Modal heading</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
 
         <div className="card col-5" key={planta?.id}>
           <div className="card-block mt-3 mb-3">
@@ -43,21 +36,17 @@ function PlantDetails() {
             <hr />
             <p className="card-text"><strong>Usos:</strong> {planta?.use}</p>
           </div>
-
           <hr />
-
-          <div className="precio-details">
-            <h3 className="card-title"> {planta?.price}</h3>
-            <button className="btn btn-warning mb-5 mx-2" onClick={() => addToCart(planta)}>Añadir 🛒</button>
-            <button className="btn btn-warning mb-5 mx-2" onClick={() => addToCart(planta)}>Volver</button>
-          </div>
-
         </div>
 
-      </Container>
-    </>
-
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="primary" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
   );
 };
 
-export default PlantDetails;
+export default ModalPlantDetails;

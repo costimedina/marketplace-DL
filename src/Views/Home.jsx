@@ -25,28 +25,28 @@ function Home() {
       <Container className="d-flex justify-content-around mt-5 mb-5 flex-wrap">
         <div>
           <div className="anchorHome home1">
-            <a className="home1" href="https://www.google.com/"><i class="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
+            <a className="home1" href="https://www.google.com/"><i className="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
           </div>
           <p className="mt-2">HUERTO A</p>
         </div>
 
         <div>
           <div className="anchorHome home2">
-            <a className="home2" href="https://www.google.com/"><i class="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
+            <a className="home2" href="https://www.google.com/"><i className="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
           </div>
           <p className="mt-2">HUERTO B</p>
         </div>
 
         <div>
           <div className="anchorHome home3">
-            <a className="home3" href="https://www.google.com/"><i class="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
+            <a className="home3" href="https://www.google.com/"><i className="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
           </div>
           <p className="mt-2">HUERTO C</p>
         </div>
 
         <div>
           <div className="anchorHome home4">
-            <a className="home4" href="https://www.google.com/"><i class="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
+            <a className="home4" href="https://www.google.com/"><i className="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
           </div>
           <p className="mt-2">HUERTO D</p>
         </div>
@@ -103,7 +103,7 @@ function Home() {
         </div>
 
         <Link to="/JoinCommunity">
-          <button type="submit" className="btn-submit btn-block mb-5">ÚNETE</button>
+          <button type="button" className="btn-submit btn-block mb-5">ÚNETE</button>
         </Link>
 
       </Container>

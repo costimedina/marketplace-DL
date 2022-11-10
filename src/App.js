@@ -2,17 +2,22 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import "./App.css"
+
 //COMPONENTS
 import PublicNavBar from "./components/PublicNavBar";
-//se deberá agregar navbar privado
+import PrivateNavBar from "./components/PrivateNavBar";
 import PublicFooter from "./components/PublicFooter";
 
 //HOOKS
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 //CONTEXT
-//se deberá agregar el context
+import PlantasContext from "./context/PlantasContext";
+import TeamContext from "./context/TeamContext";
+import UsuariosContext from "./context/UsuariosContext";
+import RegisteredUserContext from "./context/RegisteredUserContext";
 
 //VIEWS
 import Home from "./Views/Home";
@@ -26,44 +31,68 @@ import JoinCommunity from "./Views/JoinCommunity";
 import OurTeam from "./Views/OurTeam";
 import WorkWithUs from "./Views/WorkWithUs";
 import NotFound from "./Views/NotFound";
-import PlantasContext from "./context/PlantasContext";
-import { useState } from "react";
-import TeamContext from "./context/TeamContext";
+
 
 function App() {
   const [plantasData, setPlantasData] = useState([]);
   const [teamData, setTeamData] = useState([]);
-  
+  const [usuariosData, setUsuariosData] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [prueba, setPrueba] = useState(false);
+
+const PrivateRoute = ({auth: {prueba }, children }) => {
+  return prueba ? children : <Navigate to="/LogIn" />
+}
+
+
   return (
     <div className="App">
       <PlantasContext.Provider
-      value={{
-        plantasData,
-        setPlantasData,
-      }}>
-        <TeamContext.Provider
         value={{
-          teamData,
-          setTeamData,
-        }}>
-      <BrowserRouter>
-        <PublicNavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="login" element={<LogIn />} />
-          <Route path="signup" element={<SignUp />} />
-          <Route path="profile" element={<Profile />} />
-          <Route path="form" element={<PlantForm />} />
-          <Route path="catalogue" element={<Catalogue />} />
-          <Route path="/catalogue/:id/details" element={<PlantDetails />} />
-          <Route path="joincommunity" element={<JoinCommunity />} />
-          <Route path="ourteam" element={<OurTeam />} />
-          <Route path="workwithUs" element={<WorkWithUs />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <PublicFooter />
-      </BrowserRouter>
-      </TeamContext.Provider>
+          plantasData,
+          setPlantasData,
+        }}
+      >
+        <TeamContext.Provider
+          value={{
+            teamData,
+            setTeamData,
+          }}
+        >
+          <UsuariosContext.Provider
+            value={{
+              usuariosData,
+              setUsuariosData,
+            }}
+          >
+            <RegisteredUserContext.Provider
+              value={{
+                isLoggedIn,
+                setIsLoggedIn,
+                prueba,
+                setPrueba
+              }}
+            >
+              <BrowserRouter>
+                {prueba ? <PrivateNavBar /> : <PublicNavBar />}
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="login" element={<LogIn />} />
+                  <Route path="signup" element={<SignUp />} />
+                  <Route path="profile" element={<PrivateRoute auth={{ prueba }}><Profile /></PrivateRoute>}/>
+                  <Route path="form" element={<PrivateRoute auth={{ prueba }}><PlantForm /></PrivateRoute>}/>
+                  <Route path="/catalogue" element={<PrivateRoute auth={{ prueba }}><Catalogue /></PrivateRoute>}/>
+                  <Route path="/catalogue/:id/details" element={<PlantDetails />} />
+                  <Route path="joincommunity" element={<JoinCommunity />} />
+                  <Route path="ourteam" element={<OurTeam />} />
+                  <Route path="workwithUs" element={<WorkWithUs />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+                <PublicFooter />
+              </BrowserRouter>
+            </RegisteredUserContext.Provider>
+          </UsuariosContext.Provider>
+        </TeamContext.Provider>
       </PlantasContext.Provider>
     </div>
   );
