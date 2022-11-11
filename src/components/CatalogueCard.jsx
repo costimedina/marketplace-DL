@@ -44,7 +44,7 @@ function CatalogueCard({ especie }) {
         </div>
       </div>
 
-      <ModalPlantDetails show={show} planta={especie} handleClose={handleClose}  />
+      <ModalPlantDetails show={show} planta={especie} handleClose={handleClose} />
 
     </>
   );

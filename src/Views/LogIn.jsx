@@ -50,7 +50,7 @@ function LogIn() {
     if (found) {
      setIsLoggedIn(true) 
      setPrueba(true)
-      navigate("/Catalogue")
+      navigate("/catalogue")
    } else {
       window.alert("credenciales inválidas") 
    }

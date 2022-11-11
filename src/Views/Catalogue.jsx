@@ -16,7 +16,7 @@ function Catalogue() {
   const fetchData = async () => {
     const response = await fetch(endpoint);
     let data = await response.json();
-    console.log(data);
+    //console.log(data);
     setPlantasData(data);
   };
 

@@ -11,7 +11,7 @@ import PublicFooter from "./components/PublicFooter";
 
 //HOOKS
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 //CONTEXT
 import PlantasContext from "./context/PlantasContext";
@@ -31,6 +31,7 @@ import JoinCommunity from "./Views/JoinCommunity";
 import OurTeam from "./Views/OurTeam";
 import WorkWithUs from "./Views/WorkWithUs";
 import NotFound from "./Views/NotFound";
+import ModalPlantDetails from "./components/ModalPlantDetails";
 
 
 function App() {
@@ -40,10 +41,9 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [prueba, setPrueba] = useState(false);
 
-const PrivateRoute = ({auth: {prueba }, children }) => {
+const PrivateRoute = useCallback (({ children }) => {
   return prueba ? children : <Navigate to="/LogIn" />
-}
-
+},[prueba]);
 
   return (
     <div className="App">
@@ -79,10 +79,9 @@ const PrivateRoute = ({auth: {prueba }, children }) => {
                   <Route path="/" element={<Home />} />
                   <Route path="login" element={<LogIn />} />
                   <Route path="signup" element={<SignUp />} />
-                  <Route path="profile" element={<PrivateRoute auth={{ prueba }}><Profile /></PrivateRoute>}/>
-                  <Route path="form" element={<PrivateRoute auth={{ prueba }}><PlantForm /></PrivateRoute>}/>
-                  <Route path="/catalogue" element={<PrivateRoute auth={{ prueba }}><Catalogue /></PrivateRoute>}/>
-                  <Route path="/catalogue/:id/details" element={<PlantDetails />} />
+                  <Route path="profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+                  <Route path="form" element={<PrivateRoute><PlantForm /></PrivateRoute>} />
+                  <Route path="/catalogue/" element={<PrivateRoute><Catalogue /></PrivateRoute>} />
                   <Route path="joincommunity" element={<JoinCommunity />} />
                   <Route path="ourteam" element={<OurTeam />} />
                   <Route path="workwithUs" element={<WorkWithUs />} />
