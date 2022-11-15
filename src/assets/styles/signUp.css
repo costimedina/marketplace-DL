@@ -1,22 +1,33 @@
-#form1SignUp {
+#newName {
+  border: 1px solid #F5B85D;
+  width: 400px;
+}
+
+#newApellidoPaterno {
+  border: 1px solid #F5B85D;
+  width: 400px;
+}
+
+#newApellidoMaterno {
+  border: 1px solid #F5B85D;
+  width: 400px;
+}
+
+#newEmail {
+  border: 1px solid #F5B85D;
+  width: 400px;
+}
+
+#newPassword {
+  border: 1px solid #F5B85D;
+  width: 400px;
+}
+
+#repeatNewPassword {
   border: 1px solid #F5B85D;
   width: 400px;
 }
 
 label.form-labelSign {
   margin-top: 10px;
-}
-
-.signUp {
-  background-color: #FD9985;
-  color: #F9F4F2;
-  width: 180px;
-  height: 40px;
-  border-radius: 0;
-  border: none;
-  font-size: 1rem;
-}
-
-.signUp:hover {
-  box-shadow: 3px 3px 6px #999;
 }

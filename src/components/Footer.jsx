@@ -4,7 +4,7 @@ import { Navbar, Container } from "react-bootstrap";
 //DEPENDENCIAS
 import { NavLink } from "react-router-dom";
 
-function PublicFooter() {
+function Footer() {
   const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined);
 
   return (
@@ -71,4 +71,4 @@ function PublicFooter() {
   );
 }
 
-export default PublicFooter;
+export default Footer;

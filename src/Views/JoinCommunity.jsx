@@ -1,15 +1,12 @@
 //STYLES
 import { Container } from 'react-bootstrap';
 
-//COMPONENTS
-
 //IMAGES
 import communityPhoto from '../assets/images/backgrounds/community.png';
 
 function JoinCommunity() {
 
   return (
-
     <>
       <div className="mb-5 mt-5">
         <h2>ÚNETE A LA COMUNIDAD DE LA PLANTITA</h2>

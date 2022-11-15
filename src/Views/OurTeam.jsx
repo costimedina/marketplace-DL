@@ -2,10 +2,6 @@
 import "../assets/styles/ourTeam.css";
 
 //COMPONENTS
-
-//IMAGES
-
-//COMPONENTS
 import { useContext, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -14,13 +10,14 @@ import TeamContext from "../context/TeamContext";
 
 
 function OurTeam() {
+
   const { teamData, setTeamData } = useContext(TeamContext);
 
   const endpoint = "/team.json";
   const fetchData = async () => {
     const response = await fetch(endpoint);
     let data = await response.json();
-    console.log(data);
+    //console.log(data);
     setTeamData(data);
   };
 
@@ -33,40 +30,45 @@ function OurTeam() {
 
   return (
     <>
-
       <div className="banner"></div>
-
-      <Container className="d-flex justify-content-between px-5 mt-5 mb-5">
-
-        <div className="mb-5 mt-5">
-          <h3>EN LA PLANTITA SOMOS NATURALES</h3>
+      <div className="contenedor d-flex">
+        <div className="primaryText">
+          <h3><strong>EN LA PLANTITA SOMOS NATURALES</strong></h3>
         </div>
 
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div className="secondaryText">
+          <p>Lorem <strong className="mision">ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem <strong className="mision">ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem <strong className="mision">ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem <strong className="mision">ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
+      </div>
 
-      </Container>
-
-      <Container>
-
+      <Container className="mt-5">
         <div className="grilla-team">
           {teamData && teamData.map((equipo, index) => (
-            <TeamCard key={index} profesional={equipo}
+            <TeamCard
+              key={index}
+              profesional={equipo}
             />
           ))}
         </div>
-
       </Container>
 
-
-      <div>
-        <h2>TTRABAJAR EN LA PLANTITA</h2>
-        <Link className="volver-inicio" to="/WorkWithUs">
-          <button>TRABAJA CON NOSOTROS</button>
+      <div className="contenedorDown d-flex">
+        <div className="secondaryTextDown">
+          <h3><strong>TRABAJAR EN LA PLANTITA</strong></h3>
+          <br />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <Link
+          to="/wORKwITHuS"
+        >
+          <button
+            type="button"
+            className="btn-submit btn-block mb-5">
+            RE - PLANTEATE
+          </button>
         </Link>
       </div>
     </>

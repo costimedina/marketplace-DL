@@ -9,12 +9,15 @@ import PlantasContext from '../context/PlantasContext';
 //IMAGES 
 
 function PlantDetails() {
+  
   const { id } = useParams();
   const { addToCart, plantasData } = useContext(PlantasContext);
 
   const planta = plantasData.find((register) => register.id === +id);
   console.log(planta);
 
+
+  //AGREGAR BOTON VER MAS, CARRITO Y WISHLIST
   return (
     <>
       <Container className="d-flex justify-content-center px-5 mt-6 mb-5">

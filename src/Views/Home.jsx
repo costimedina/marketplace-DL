@@ -103,11 +103,14 @@ function Home() {
         </div>
 
         <Link to="/JoinCommunity">
-          <button type="button" className="btn-submit btn-block mb-5">ÚNETE</button>
+          <button
+            type="button"
+            className="btn-submit btn-block mb-5">
+            ÚNETE
+          </button>
         </Link>
 
       </Container>
-
 
       <div className="bannerHome">
         <div className="px-5 mt-5 mb-5">

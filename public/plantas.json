@@ -7,11 +7,11 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/solo-arbol-verde-cielo-despejado_181624-46695.jpg?w=996&t=st=1667877758~exp=1667878358~hmac=b77fbfad22fa5c428a3451b869c8abb99582d3ae95ab768ec3dc92081cce641b",
       "origin": "Chile",
-      "exposition": "Pleno sol",
-      "topsoil": "Bien drenado",
-      "spreading": "3 metros",
-      "use": "En xerojardinería",
-      "price":"$9.990"
+      "exposition": "Pleno sol.",
+      "topsoil": "Bien drenado.",
+      "spreading": "3 metros.",
+      "use": "En xerojardinería.",
+      "price":"59.990"
     },
     {
       "id":2,
@@ -20,12 +20,12 @@
       "commonName": "Castaño de California",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/solo-arbol-verde-cielo-despejado_181624-46695.jpg?w=996&t=st=1667877758~exp=1667878358~hmac=b77fbfad22fa5c428a3451b869c8abb99582d3ae95ab768ec3dc92081cce641b",
-      "origin": "Valles centrales en California USA",
-      "exposition": "Pleno sol",
-      "topsoil": "Amplio rango de suelos",
-      "spreading": "Como ejemplar único o cada 5 metros",
-      "use": "En xerojardinería",
-      "price":"$9.990"
+      "origin": "Valles centrales en California USA.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Amplio rango de suelos.",
+      "spreading": "Como ejemplar único o cada 5 metros.",
+      "use": "En xerojardinería.",
+      "price":"19.990"
     },
     {
       "id":3,
@@ -34,12 +34,12 @@
       "commonName": "Olivillo, Palo muerto, Aceitunillo",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/solo-arbol-verde-cielo-despejado_181624-46695.jpg?w=996&t=st=1667877758~exp=1667878358~hmac=b77fbfad22fa5c428a3451b869c8abb99582d3ae95ab768ec3dc92081cce641b",
-      "origin": "Endémica del bosque templado de Chile y Argentina",
-      "exposition": "Sol y semi sombra ",
-      "topsoil": "Con buena retención de humedad",
-      "spreading": "3 metros",
-      "use": "Como arbol aislado o bosquetes",
-      "price":"$9.990"
+      "origin": "Endémica del bosque templado de Chile y Argentina.",
+      "exposition": "Sol y semi sombra.",
+      "topsoil": "Con buena retención de humedad.",
+      "spreading": "3 metros.",
+      "use": "Como arbol aislado o bosquetes.",
+      "price":"89.990"
     },
     {
       "id":4,
@@ -48,12 +48,12 @@
       "commonName": "Tara",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/solo-arbol-verde-cielo-despejado_181624-46695.jpg?w=996&t=st=1667877758~exp=1667878358~hmac=b77fbfad22fa5c428a3451b869c8abb99582d3ae95ab768ec3dc92081cce641b",
-      "origin": "Chile Zona Centro Norte",
-      "exposition": "Pleno sol",
-      "topsoil": "No es exigente, bien drenado y con presencia de materia orgánica",
-      "spreading": "3 metros",
-      "use": "En xerojardinería con Stipa plumosa y arbustos esclerófilos",
-      "price":"$9.990"
+      "origin": "Chile Zona Centro Norte.",
+      "exposition": "Pleno sol.",
+      "topsoil": "No es exigente, bien drenado y con presencia de materia orgánica.",
+      "spreading": "3 metros.",
+      "use": "En xerojardinería con Stipa plumosa y arbustos esclerófilos.",
+      "price":"69.990"
     },
     {
       "id":5,
@@ -62,12 +62,12 @@
       "commonName": "Parkinsonia florida, paloverde azul",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/solo-arbol-verde-cielo-despejado_181624-46695.jpg?w=996&t=st=1667877758~exp=1667878358~hmac=b77fbfad22fa5c428a3451b869c8abb99582d3ae95ab768ec3dc92081cce641b",
-      "origin": "Sudeste de california",
-      "exposition": "No debe ser expuesta en el sol directo en épocas muy calurosas",
-      "topsoil": "Suelo pobres en nutrientes , permeables y arenosos",
-      "spreading": "Sin información",
-      "use": "Sin información",
-      "price":"$9.990"
+      "origin": "Sudeste de california.",
+      "exposition": "No debe ser expuesta en el sol directo en épocas muy calurosas.",
+      "topsoil": "Suelo pobres en nutrientes , permeables y arenosos.",
+      "spreading": "Sin información.",
+      "use": "Sin información.",
+      "price":"49.990"
     },
     {
       "id":6,
@@ -76,12 +76,12 @@
       "commonName": "Ajenjo",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/arbustos-lavanda-patio_627829-14110.jpg?w=996&t=st=1667877895~exp=1667878495~hmac=682fa921a22d5e559d46b22f8f19a28d92c9106c785be37c815411a51b7799e2",
-      "origin": "Sin información",
-      "exposition": "Pleno sol",
-      "topsoil": "Pobre con buen drenaje",
-      "spreading": "1 metro",
-      "use": "Con plantas de follajes verdes, rojos, con herbáceas y pastos ornamentales",
-      "price":"$9.990"
+      "origin": "Sin información.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Pobre con buen drenaje.",
+      "spreading": "1 metro.",
+      "use": "Con plantas de follajes verdes, rojos, con herbáceas y pastos ornamentales.",
+      "price":"14.990"
     }, 
     {
       "id":7,
@@ -90,12 +90,12 @@
       "commonName": "Crespón",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/arbustos-lavanda-patio_627829-14110.jpg?w=996&t=st=1667877895~exp=1667878495~hmac=682fa921a22d5e559d46b22f8f19a28d92c9106c785be37c815411a51b7799e2",
-      "origin": "China, Japón, India",
-      "exposition": "Pleno sol",
-      "topsoil": "Tolera una amplia gama de suelos",
-      "spreading": "4 metros",
-      "use": "Como ejemplares aislados o en grupos",
-      "price":"$9.990"
+      "origin": "China, Japón, India.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Tolera una amplia gama de suelos.",
+      "spreading": "4 metros.",
+      "use": "Como ejemplares aislados o en grupos.",
+      "price":"6.990"
     },
     {
       "id":8,
@@ -104,12 +104,12 @@
       "commonName": "Leonitis",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/arbustos-lavanda-patio_627829-14110.jpg?w=996&t=st=1667877895~exp=1667878495~hmac=682fa921a22d5e559d46b22f8f19a28d92c9106c785be37c815411a51b7799e2",
-      "origin": "Sudáfrica",
-      "exposition": "Pleno sol",
-      "topsoil": "Amplia gama de suelos con buen drenaje",
-      "spreading": "1.2 metros",
-      "use": "En xerojardinería y arbustos esclerófilos",
-      "price":"$9.990"
+      "origin": "Sudáfrica.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Amplia gama de suelos con buen drenaje.",
+      "spreading": "1.2 metros.",
+      "use": "En xerojardinería y arbustos esclerófilos.",
+      "price":"65.990"
     },
     {
       "id":9,
@@ -118,12 +118,12 @@
       "commonName": "Malva de California",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/arbustos-lavanda-patio_627829-14110.jpg?w=996&t=st=1667877895~exp=1667878495~hmac=682fa921a22d5e559d46b22f8f19a28d92c9106c785be37c815411a51b7799e2",
-      "origin": "En los desiertos de Arizona, California, Utah",
-      "exposition": "Pleno sol",
-      "topsoil": "Pobre y con buen drenaje",
-      "spreading": "0.35 metros",
-      "use": "En xerojardinería como planta colorida de primer plano o dispersas entre la gravilla",
-      "price":"$9.990"
+      "origin": "En los desiertos de Arizona, California, Utah.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Pobre y con buen drenaje.",
+      "spreading": "0.35 metros.",
+      "use": "En xerojardinería como planta colorida de primer plano o dispersas entre la gravilla.",
+      "price":"12.990"
     },
     {
       "id":10,
@@ -132,12 +132,12 @@
       "commonName": "Salvia canaria, Salvia morisca",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/arbustos-lavanda-patio_627829-14110.jpg?w=996&t=st=1667877895~exp=1667878495~hmac=682fa921a22d5e559d46b22f8f19a28d92c9106c785be37c815411a51b7799e2",
-      "origin": "originaria de las Islas Canarias",
-      "exposition": "Exposición de pleno sol pero también puede vivir en una sombra ligera",
-      "topsoil": "No exigente con el tipo de suelo siempre que esté bien drenado pues no tolera el exceso de agua",
-      "spreading": "2 metros",
-      "use": "En jardines para zonas áridas",
-      "price":"$9.990"
+      "origin": "originaria de las Islas Canarias.",
+      "exposition": "Exposición de pleno sol pero también puede vivir en una sombra ligera.",
+      "topsoil": "No exigente con el tipo de suelo siempre que esté bien drenado pues no tolera el exceso de agua.",
+      "spreading": "2 metros.",
+      "use": "En jardines para zonas áridas.",
+      "price":"45.990"
     },
     {
       "id":11,
@@ -146,12 +146,12 @@
       "commonName": "Agave gris",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg?w=996&t=st=1667877964~exp=1667878564~hmac=d25a57947d9be585e35891e00db6965bdfa72ff1fa8b7c7213f8c031da4692b1",
-      "origin": "México",
-      "exposition": "Pleno sol",
-      "topsoil": "Amplia gama de suelos, desde arenas de duna hasta arcillosos, buen drenaje",
-      "spreading": "1.8 metros",
-      "use": "Planta solitaria o en grupos",
-      "price":"$9.990"
+      "origin": "México.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Amplia gama de suelos, desde arenas de duna hasta arcillosos, buen drenaje.",
+      "spreading": "1.8 metros.",
+      "use": "Planta solitaria o en grupos.",
+      "price":"2.990"
     },
     {
       "id":12,
@@ -160,12 +160,12 @@
       "commonName": "Agave atenuatta",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg?w=996&t=st=1667877964~exp=1667878564~hmac=d25a57947d9be585e35891e00db6965bdfa72ff1fa8b7c7213f8c031da4692b1",
-      "origin": "México",
-      "exposition": "Semi sombra",
-      "topsoil": "Franco, franco arenoso, bien drenado, tolera suelos pobres y secos",
-      "spreading": "1.2 metros",
-      "use": "Como planta solitaria y en grupos. Apta para maceta y rocalla",
-      "price":"$9.990"
+      "origin": "México.",
+      "exposition": "Semi sombra.",
+      "topsoil": "Franco, franco arenoso, bien drenado, tolera suelos pobres y secos.",
+      "spreading": "1.2 metros.",
+      "use": "Como planta solitaria y en grupos. Apta para maceta y rocalla.",
+      "price":"15.990"
     },
     {
       "id":13,
@@ -174,12 +174,12 @@
       "commonName": "Áloe trepador",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg?w=996&t=st=1667877964~exp=1667878564~hmac=d25a57947d9be585e35891e00db6965bdfa72ff1fa8b7c7213f8c031da4692b1",
-      "origin": "Sudáfrica",
-      "exposition": "No demasiado sol, desarrollándose bien en semisombra",
-      "topsoil": "Suelos bien drenados",
-      "spreading": "Sin información",
-      "use": "Al ser un aloe trepador, su distanciamiento depende del objetivo que se tenga",
-      "price":"$9.990"
+      "origin": "Sudáfrica.",
+      "exposition": "No demasiado sol, desarrollándose bien en semisombra.",
+      "topsoil": "Suelos bien drenados.",
+      "spreading": "Sin información.",
+      "use": "Al ser un aloe trepador, su distanciamiento depende del objetivo que se tenga.",
+      "price":"30.990"
     },
     {
       "id":14,
@@ -188,12 +188,12 @@
       "commonName": "Sedum rosado",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg?w=996&t=st=1667877964~exp=1667878564~hmac=d25a57947d9be585e35891e00db6965bdfa72ff1fa8b7c7213f8c031da4692b1",
-      "origin": "Europa, Este de China, Siberia y Japón",
-      "exposition": "Sol",
-      "topsoil": "Bien drenado",
-      "spreading": "0.3 metros",
-      "use": "En grandes masas con Calamagrostis, Rudbeckia, Perovskia y Carex",
-      "price":"$9.990"
+      "origin": "Europa, Este de China, Siberia y Japón.",
+      "exposition": "Sol.",
+      "topsoil": "Bien drenado.",
+      "spreading": "0.3 metros.",
+      "use": "En grandes masas con Calamagrostis, Rudbeckia, Perovskia y Carex.",
+      "price":"5.990"
     },
     {
       "id":15,
@@ -202,26 +202,26 @@
       "commonName": "Chagualillo",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/disposicion-rectangular-suculentas-cactus-suculentas-plantador_1127-3108.jpg?w=996&t=st=1667877964~exp=1667878564~hmac=d25a57947d9be585e35891e00db6965bdfa72ff1fa8b7c7213f8c031da4692b1",
-      "origin": "Roqueríos de la Costa Central, Chile",
-      "exposition": "Pleno sol",
-      "topsoil": "Arenosos, pedregosos, buen drenaje",
-      "spreading": "1 metro",
-      "use": "Planta solitaria, en macizos de la misma especie, rocallas, excelente para jardines costeros",
-      "price":"$9.990"
+      "origin": "Roqueríos de la Costa Central, Chile.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Arenosos, pedregosos, buen drenaje.",
+      "spreading": "1 metro.",
+      "use": "Planta solitaria, en macizos de la misma especie, rocallas, excelente para jardines costeros.",
+      "price":"9.990"
     },
     {
       "id":16,
-      "name": " s",
+      "name": "Acanthus mollis",
       "type": "Herbáceas perennes",
       "commonName": "Acanto",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/hermosa-foto-plantas-lavanda-jardin-dia-soleado_181624-17428.jpg?w=996&t=st=1667878068~exp=1667878668~hmac=1a02989e9db7272c49aed548d425ae4eb3844319d1498ad76263132358d25ca4",
-      "origin": "Sur y suroeste de Europa y en el norte de África",
-      "exposition": "Sol o semisombra, protegida del viento. Tolera ambientes marinos",
-      "topsoil": "Bien drenado, fresco o seco. Mezclar con arena",
-      "spreading": "0.5 metros",
-      "use": "Como pantalla visual o para acentuar algún lugar del jardín",
-      "price":"$9.990"
+      "origin": "Sur y suroeste de Europa y en el norte de África.",
+      "exposition": "Sol o semisombra, protegida del viento. Tolera ambientes marinos.",
+      "topsoil": "Bien drenado, fresco o seco. Mezclar con arena.",
+      "spreading": "0.5 metros.",
+      "use": "Como pantalla visual o para acentuar algún lugar del jardín.",
+      "price":"9.990"
     },
     {
       "id":17,
@@ -230,12 +230,12 @@
       "commonName": "Agapanto",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/hermosa-foto-plantas-lavanda-jardin-dia-soleado_181624-17428.jpg?w=996&t=st=1667878068~exp=1667878668~hmac=1a02989e9db7272c49aed548d425ae4eb3844319d1498ad76263132358d25ca4",
-      "origin": "Sudáfrica",
-      "exposition": "Semisombra o al sol. En zonas muy calurosas es mejor situar a media sombra",
-      "topsoil": "Profundo y fértil, sustrato con resaca de río",
-      "spreading": "0.5 metros",
-      "use": "Empleada en los jardines para formar macizos vistosos, apta para contenedores, excelente cubresuelo e impide el crecimiento de malezas por su sistema radicular compacto",
-      "price":"$9.990"
+      "origin": "Sudáfrica.",
+      "exposition": "Semisombra o al sol. En zonas muy calurosas es mejor situar a media sombra.",
+      "topsoil": "Profundo y fértil, sustrato con resaca de río.",
+      "spreading": "0.5 metros.",
+      "use": "Empleada en los jardines para formar macizos vistosos, apta para contenedores, excelente cubresuelo e impide el crecimiento de malezas por su sistema radicular compacto.",
+      "price":"9.990"
     },
     {
       "id":18,
@@ -244,12 +244,12 @@
       "commonName": "Lilium blanco o Azucena",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/hermosa-foto-plantas-lavanda-jardin-dia-soleado_181624-17428.jpg?w=996&t=st=1667878068~exp=1667878668~hmac=1a02989e9db7272c49aed548d425ae4eb3844319d1498ad76263132358d25ca4",
-      "origin": "Cuenca del Mediterráneo, Europa y Asia",
-      "exposition": "Plano sol, semisombra",
-      "topsoil": "Rocosos, ricos y permeables",
-      "spreading": "0.4 metros",
-      "use": "Como flor de corta y en jardinería muy apreciada por su valor ornamental y su agradable olor, apropiada para cultivar en macizos de plantas herbáceas",
-      "price":"$9.990"
+      "origin": "Cuenca del Mediterráneo, Europa y Asia.",
+      "exposition": "Plano sol, semisombra.",
+      "topsoil": "Rocosos, ricos y permeables.",
+      "spreading": "0.4 metros.",
+      "use": "Como flor de corta y en jardinería muy apreciada por su valor ornamental y su agradable olor, apropiada para cultivar en macizos de plantas herbáceas.",
+      "price":"45.990"
     },
     {
       "id":19,
@@ -258,12 +258,12 @@
       "commonName": "Salvia de Siberia",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/hermosa-foto-plantas-lavanda-jardin-dia-soleado_181624-17428.jpg?w=996&t=st=1667878068~exp=1667878668~hmac=1a02989e9db7272c49aed548d425ae4eb3844319d1498ad76263132358d25ca4",
-      "origin": "Cuenca del Mediterráneo, Europa y Asia",
-      "exposition": "Pleno sol y semi sombra",
-      "topsoil": "Amplia gama",
-      "spreading": "0.3 metros",
-      "use": "En jardines naturales o como foco de colores en los jardines tradicionales",
-      "price":"$9.990"
+      "origin": "Cuenca del Mediterráneo, Europa y Asia.",
+      "exposition": "Pleno sol y semi sombra.",
+      "topsoil": "Amplia gama.",
+      "spreading": "0.3 metros.",
+      "use": "En jardines naturales o como foco de colores en los jardines tradicionales.",
+      "price":"77.990"
     },
     {
       "id":20,
@@ -272,12 +272,12 @@
       "commonName": "Escabiosa",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/foto-gratis/hermosa-foto-plantas-lavanda-jardin-dia-soleado_181624-17428.jpg?w=996&t=st=1667878068~exp=1667878668~hmac=1a02989e9db7272c49aed548d425ae4eb3844319d1498ad76263132358d25ca4",
-      "origin": "Europa",
-      "exposition": "Pleno sol y temperaturas entre 15-25 ºC",
-      "topsoil": "Arcilloso, bien drenado y fértil",
-      "spreading": "Sin información",
-      "use": "Junto con otras herbáceas como Salvia sclarea, Crocosmia, Eryngium, Gaura y pastos ornamentales",
-      "price":"$9.990"
+      "origin": "Europa.",
+      "exposition": "Pleno sol y temperaturas entre 15-25 ºC.",
+      "topsoil": "Arcilloso, bien drenado y fértil.",
+      "spreading": "Sin información.",
+      "use": "Junto con otras herbáceas como Salvia sclarea, Crocosmia, Eryngium, Gaura y pastos ornamentales.",
+      "price":"100.990"
     },
     {
       "id":21,
@@ -286,12 +286,12 @@
       "commonName": "Carex cobrizo",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/fotos-premium/scabiosa-lucida-planta-silvestre-planta-que-florece-verano_689703-100.jpg?w=996",
-      "origin": "Nueva Zelanda",
-      "exposition": "Pleno sol",
-      "topsoil": "Arenosos, bien drenados y húmedos",
-      "spreading": "0.6 metros",
-      "use": "Dado su color cobrizo se recomienda asociarlo con herbáceas perennes de floración llamativa",
-      "price":"$9.990"
+      "origin": "Nueva Zelanda.",
+      "exposition": "Pleno sol.",
+      "topsoil": "Arenosos, bien drenados y húmedos.",
+      "spreading": "0.6 metros.",
+      "use": "Dado su color cobrizo se recomienda asociarlo con herbáceas perennes de floración llamativa.",
+      "price":"1.990"
     },
     {
       "id":22,
@@ -300,12 +300,12 @@
       "commonName": "Escabiosa",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/fotos-premium/scabiosa-lucida-planta-silvestre-planta-que-florece-verano_689703-100.jpg?w=996",
-      "origin": "Europa",
-      "exposition": "Pleno sol y temperaturas entre 15-25 ºC",
-      "topsoil": "Arcilloso, bien drenado y fértil",
-      "spreading": "Sin información",
-      "use": "Junto con otras herbáceas como Salvia sclarea, Crocosmia, Eryngium, Gaura y pastos ornamentales",
-      "price":"$9.990"
+      "origin": "Europa.",
+      "exposition": "Pleno sol y temperaturas entre 15-25 ºC.",
+      "topsoil": "Arcilloso, bien drenado y fértil.",
+      "spreading": "Sin información.",
+      "use": "Junto con otras herbáceas como Salvia sclarea, Crocosmia, Eryngium, Gaura y pastos ornamentales.",
+      "price":"1.990"
     },
     {
       "id":23,
@@ -314,12 +314,12 @@
       "commonName": "Paspalum",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/fotos-premium/scabiosa-lucida-planta-silvestre-planta-que-florece-verano_689703-100.jpg?w=996",
-      "origin": "Noroeste de Argentina",
-      "exposition": "Pleno sol o media sombra",
-      "topsoil": "Prefiere suelos húmedos, tolera encharcamientos",
-      "spreading": "Sin información",
-      "use": "Muy ornamental, por su porte rústico y coloración. Se luce aislado o agrupado en amplios espacios",
-      "price":"$9.990"
+      "origin": "Noroeste de Argentina.",
+      "exposition": "Pleno sol o media sombra.",
+      "topsoil": "Prefiere suelos húmedos, tolera encharcamientos.",
+      "spreading": "Sin información.",
+      "use": "Muy ornamental, por su porte rústico y coloración. Se luce aislado o agrupado en amplios espacios.",
+      "price":"7.990"
     },
     {
       "id":24,
@@ -328,12 +328,12 @@
       "commonName": "Coironcillo",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/fotos-premium/scabiosa-lucida-planta-silvestre-planta-que-florece-verano_689703-100.jpg?w=996",
-      "origin": "Chile, zona central",
-      "exposition": "Pleno sol a semisombra",
-      "topsoil": "Desde suelos pobres, erosionados hasta fértiles y profundos",
-      "spreading": "0.6 metros",
-      "use": "Para suelos muy degradados, muy usada para la restauración de estos, en jardinería puede combinarse con cualquier herbácea perenne",
-      "price":"$9.990"
+      "origin": "Chile, zona central.",
+      "exposition": "Pleno sol a semisombra.",
+      "topsoil": "Desde suelos pobres, erosionados hasta fértiles y profundos.",
+      "spreading": "0.6 metros.",
+      "use": "Para suelos muy degradados, muy usada para la restauración de estos, en jardinería puede combinarse con cualquier herbácea perenne.",
+      "price":"7.990"
     },
     {
       "id":25,
@@ -342,11 +342,11 @@
       "commonName": "Pennisetum blanco",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "img": "https://img.freepik.com/fotos-premium/scabiosa-lucida-planta-silvestre-planta-que-florece-verano_689703-100.jpg?w=996",
-      "origin": "Noroeste Tropical de África",
-      "exposition": "Sol - semisombra",
-      "topsoil": "Bien drenado",
-      "spreading": "0.6 metros",
-      "use": "Ideal para control de erosión, en macizos tiene un impresionante efecto en floración, apto para macetas",
-      "price":"$9.990"
+      "origin": "Noroeste Tropical de África.",
+      "exposition": "Sol - semisombra.",
+      "topsoil": "Bien drenado.",
+      "spreading": "0.6 metros.",
+      "use": "Ideal para control de erosión, en macizos tiene un impresionante efecto en floración, apto para macetas.",
+      "price":"16.990"
     }    
   ]

@@ -1,6 +1,5 @@
 //STYLES
-import "../assets/styles/workWithUs.css";
-import { Form, Button } from "react-bootstrap";
+import { Form, Container } from "react-bootstrap";
 
 //COMPONENTS
 
@@ -12,49 +11,112 @@ function WorkWithUs() {
 
   return (
     <>
-    
-      <h1>Trabaja con nosotros</h1>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+      <div className="banner"></div>
 
-      <img
-              height="280px"
-              src={workImage}
-              alt="Plano de arquitectura"
+      <div className="mb-4 mt-5">
+        <h2>TRABAJA CON NOSOTROS</h2>
+      </div>
+
+      <div>
+        <img
+          className="mb-4"
+          height="180px"
+          src={workImage}
+          alt="certificacion"
+        />
+      </div>
+
+      <Container className="d-flex justify-content-center mt-3">
+        <Form>
+          <div className="form-outline mb-4">
+            <input
+              type="text"
+              id="form1Login"
+              className="form-control"
             />
-      <Form>
+            <label
+              className="form-labelLogin">
+              Nombre
+            </label>
+          </div>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="text" required placeholder="Nombre" />
-        </Form.Group>
+          <div className="form-outline mb-4">
+            <input
+              type="text"
+              id="form1Login"
+              className="form-control"
+            />
+            <label
+              className="form-labelLogin">
+              Apellido Materno
+            </label>
+          </div>
 
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control type="text" required placeholder="Apellidos" />
-        </Form.Group>
+          <div className="form-outline mb-4">
+            <input
+              type="text"
+              id="form1Login"
+              className="form-control"
+            />
+            <label
+              className="form-labelLogin">
+              Apellido Paterno
+            </label>
+          </div>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="email" required placeholder="Email" />
-        </Form.Group>
+          <div className="form-outline mb-4">
+            <input
+              type="email"
+              id="form1Login"
+              className="form-control"
+            />
+            <label
+              className="form-labelLogin">
+              Email
+            </label>
+          </div>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="number" required placeholder="Teléfono" />
-        </Form.Group>
+          <div className="form-outline mb-4">
+            <input
+              type="text"
+              id="form1Login"
+              className="form-control"
+            />
+            <label
+              className="form-labelLogin">
+              Número de contacto
+            </label>
+          </div>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control type="text" required placeholder="Perfíl de LinkedIn" />
-        </Form.Group>
+          <div className="form-outline mb-5">
+            <input
+              type="text"
+              id="form1Login"
+              className="form-control"
+            />
+            <label
+              className="form-labelLogin">
+              LinkedIn
+            </label>
+          </div>
 
-        <h3>Adjunta CV</h3>
+          <div className="d-flex justify-content-between">
+            <button
+              type="button"
+              className="login btn-submit btn-block mb-4"
+            >
+              ADJUNTAR CV
+            </button>
 
-        <Button variant="primary" required type="submit">
-          Adjuntar archivo
-        </Button>
-
-        <Button variant="primary" type="submit">
-          Ingresar Información
-        </Button>
-
-      </Form>
-
+            <button
+              type="button"
+              className="login btn-submit btn-block mb-4"
+            >
+              INGRESAR
+            </button>
+          </div>
+        </Form>
+      </Container>
     </>
   );
 };

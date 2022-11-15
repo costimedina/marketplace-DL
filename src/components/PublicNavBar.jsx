@@ -8,9 +8,9 @@ import { NavLink } from "react-router-dom";
 //IMAGES
 import blackLogo from '../assets/images/logos/logo-inicio.png';
 
-function NavBar() {
-  const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined);
+function PublicNavBar() {
 
+  const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined);
 
   return (
 
@@ -20,8 +20,13 @@ function NavBar() {
       style={{ background: "#212225" }}
     >
 
-      <NavLink end className={setActiveClass} to="/" >
-        <Navbar.Brand className="d-flex px-5">
+      <NavLink 
+      end className={setActiveClass} 
+      to="/" 
+      >
+        <Navbar.Brand 
+        className="d-flex px-5"
+        >
           <img
             width="80"
             src={blackLogo}
@@ -32,10 +37,13 @@ function NavBar() {
 
       <Nav className="d-flex px-4">
 
-        <NavLink end className={setActiveClass} to="LogIn">
+        <NavLink 
+        end className={setActiveClass} 
+        to="LogIn"
+        >
           <h5><i className="fa-sharp fa-solid fa-user"></i> Ingresar</h5>
         </NavLink>
-
+        
         <NavLink className={setActiveClass} to="SignUp">
           <h5><i className="fa-sharp fa-solid fa-right-to-bracket"></i> Registrarse</h5>
         </NavLink>
@@ -45,5 +53,5 @@ function NavBar() {
   );
 };
 
-export default NavBar;
+export default PublicNavBar;
 

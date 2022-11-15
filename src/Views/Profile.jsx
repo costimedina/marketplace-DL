@@ -5,7 +5,6 @@ import { Container, Form } from "react-bootstrap";
 //COMPONENTS
 
 //IMAGES
-import profile from '../assets/images/team/profile-small.jpg';
 import { Link } from "react-router-dom";
 
 
@@ -19,15 +18,6 @@ function Profile() {
       </div>
 
       <Container className="d-flex justify-content-around px-5 flex-wrap">
-
-        <div>
-          <img
-            className="profileImg"
-            height="280px"
-            src={profile}
-            alt="foto de perfil"
-          />
-        </div>
 
         <Form>
           <div className="form-outline mb-4">
@@ -59,8 +49,14 @@ function Profile() {
           <h2>Mis Publicaciones</h2>
         </div>
 
-        <Link to="/Profile">
-          <button type="submit" className="login btn-submit btn-block mb-4">Agregar plantita</button>
+        <Link to="/PlantForm">
+        
+        <button
+            type="button"
+            className="login btn-submit btn-block mb-4"
+            >
+            AGREGAR PLANTITA
+          </button>
         </Link>
 
       </Container>

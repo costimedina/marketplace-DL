@@ -7,11 +7,11 @@ import "./App.css"
 //COMPONENTS
 import PublicNavBar from "./components/PublicNavBar";
 import PrivateNavBar from "./components/PrivateNavBar";
-import PublicFooter from "./components/PublicFooter";
+import Footer from "./components/Footer";
 
 //HOOKS
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 //CONTEXT
 import PlantasContext from "./context/PlantasContext";
@@ -26,12 +26,10 @@ import SignUp from "./Views/SignUp";
 import Profile from "./Views/Profile";
 import PlantForm from "./Views/PlantForm";
 import Catalogue from "./Views/Catalogue";
-import PlantDetails from "./Views/PlantDetails";
 import JoinCommunity from "./Views/JoinCommunity";
 import OurTeam from "./Views/OurTeam";
 import WorkWithUs from "./Views/WorkWithUs";
 import NotFound from "./Views/NotFound";
-import ModalPlantDetails from "./components/ModalPlantDetails";
 
 
 function App() {
@@ -40,6 +38,21 @@ function App() {
   const [usuariosData, setUsuariosData] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [prueba, setPrueba] = useState(false);
+
+
+  const endpoint = "/usuarios.json";
+  const fetchData = async () => {
+    const response = await fetch(endpoint);
+    let usuarios = await response.json();
+    //console.log(usuarios);
+    setUsuariosData(usuarios);
+  };
+
+  //renderizado
+  useEffect(() => {
+    fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
 const PrivateRoute = useCallback (({ children }) => {
   return prueba ? children : <Navigate to="/LogIn" />
@@ -80,14 +93,14 @@ const PrivateRoute = useCallback (({ children }) => {
                   <Route path="login" element={<LogIn />} />
                   <Route path="signup" element={<SignUp />} />
                   <Route path="profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
-                  <Route path="form" element={<PrivateRoute><PlantForm /></PrivateRoute>} />
+                  <Route path="plantForm" element={<PrivateRoute><PlantForm /></PrivateRoute>} />
                   <Route path="/catalogue/" element={<PrivateRoute><Catalogue /></PrivateRoute>} />
                   <Route path="joincommunity" element={<JoinCommunity />} />
                   <Route path="ourteam" element={<OurTeam />} />
                   <Route path="workwithUs" element={<WorkWithUs />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
-                <PublicFooter />
+                <Footer />
               </BrowserRouter>
             </RegisteredUserContext.Provider>
           </UsuariosContext.Provider>

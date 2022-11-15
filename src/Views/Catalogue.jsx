@@ -1,6 +1,6 @@
 //STYLES
 import "../assets/styles/catalogue.css";
-import { Container } from "react-bootstrap";
+import { Container, Form } from "react-bootstrap";
 
 //COMPONENTS
 import { useEffect, useContext, useState } from "react";
@@ -8,8 +8,9 @@ import CatalogueCard from "../components/CatalogueCard";
 import PlantasContext from "../context/PlantasContext";
 
 function Catalogue() {
-  const { plantasData, setPlantasData } = useContext(PlantasContext);
+
   const [searchPlantas, setSearchPlantas] = useState("");
+  const { plantasData, setPlantasData } = useContext(PlantasContext);
 
   //función que trae los datos de la API
   const endpoint = "/plantas.json";
@@ -26,14 +27,39 @@ function Catalogue() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  //función de búsqueda
-  const searcher = (e) => {
-    setSearchPlantas(e.target.value);
-    console.log(e.target.value);
+  //funcion de búsqueda por tipo de especie en el input
+  const typeSearcher = (typeEvent) => {
+    setSearchPlantas(typeEvent.target.value);
+    //console.log(typeEvent.target.value);
   };
 
-  //FILTER Q NO FUNCIONA EN LA BARRA DE BÚSQUEDA
-  const resultado = !searchPlantas ? plantasData : plantasData.filter((dato) => dato.type.toLowerCase().includes(searchPlantas.toLocaleLowerCase()));
+  //función para filtrado los productos en el select (nombre y precio)
+  const filterSearcher = (filterEvent) => {
+    let sortProducts = filterEvent.target.value;
+    if (sortProducts === "ordenarNombreA") {
+      plantasData.sort((a, b) => a.commonName.localeCompare(b.commonName));
+      setPlantasData([...plantasData]);
+    } else if (sortProducts === "ordenarNombreD") {
+      plantasData.sort((a, b) => b.commonName.localeCompare(a.commonName));
+      setPlantasData([...plantasData]);
+    }
+
+    if (sortProducts === "ordenarPrecioA") {
+      plantasData.sort((a, b) => a.price - b.price);
+      setPlantasData([...plantasData]);
+    } else if (sortProducts === "ordenarPrecioD") {
+      plantasData.sort((a, b) => b.price - a.price);
+      setPlantasData([...plantasData]);
+    }
+  };
+
+  //Función que realiza un filtro para buscar tipos de especies
+  const resultado = !searchPlantas ? plantasData : plantasData.filter((dato) => dato.type
+    .toLowerCase()
+    //se excluye la busqueda con tilde para faciliar la expetiencia
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .includes(searchPlantas.toLocaleLowerCase()));
 
   return (
     <>
@@ -45,20 +71,29 @@ function Catalogue() {
             className="form-control"
             type="text"
             id="form1Catalogue"
-            placeholder="¿Qué tipo de plantas estás buscando?"
+            placeholder="¿Qué tipo de especie estás buscando?                 🔍"
             value={searchPlantas}
-            onChange={searcher}
+            onChange={typeSearcher}
           />
         </div>
 
-        <select className="form-select mb-4" id="select1Catalogue" aria-label="Default select example">
-          <option selected>Ordenar por:</option>
-          <option value="1">Árboles</option>
-          <option value="2">Arbustos</option>
-          <option value="3">Cactáceas/Suculentas</option>
-          <option value="4">Herbáceas perennes</option>
-          <option value="4">Pastos ornamentales</option>
-        </select>
+        <Form.Select
+          className="form-select mb-4"
+          id="select1Catalogue"
+          aria-label="Default select example"
+          value={searchPlantas}
+          onChange={filterSearcher}
+          >
+
+          <option value="">
+            Categorías
+          </option>
+          <option value="ordenarPrecioA">Precio Menor a Mayor</option>
+          <option value="ordenarPrecioD">Precio Mayor a Menor</option>
+          <option value="ordenarNombreA">Nombre común: de A - Z</option>
+          <option value="ordenarNombreD">Nombre común: de Z - A</option>
+
+        </Form.Select>
 
       </Container>
 
@@ -66,7 +101,9 @@ function Catalogue() {
 
         <div className="grilla-plantas">
           {resultado.map((publicacion, index) => (
-            <CatalogueCard key={index} especie={publicacion}
+            <CatalogueCard
+              key={index}
+              especie={publicacion}
             />
           ))}
         </div>
