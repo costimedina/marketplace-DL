@@ -1,8 +1,7 @@
 //STYLES
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import "./App.css"
+import "./App.css";
 
 //COMPONENTS
 import PublicNavBar from "./components/PublicNavBar";
@@ -31,7 +30,6 @@ import OurTeam from "./Views/OurTeam";
 import WorkWithUs from "./Views/WorkWithUs";
 import NotFound from "./Views/NotFound";
 
-
 function App() {
   const [plantasData, setPlantasData] = useState([]);
   const [teamData, setTeamData] = useState([]);
@@ -39,10 +37,10 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [prueba, setPrueba] = useState(false);
 
-
-  const endpoint = "/usuarios.json";
-  const fetchData = async () => {
-    const response = await fetch(endpoint);
+  //función que trae los datos de la API usuarios
+  const endpointUsers = "/usuarios.json";
+  const fetchDataUsers = async () => {
+    const response = await fetch(endpointUsers);
     let usuarios = await response.json();
     //console.log(usuarios);
     setUsuariosData(usuarios);
@@ -50,13 +48,31 @@ function App() {
 
   //renderizado
   useEffect(() => {
-    fetchData();
+    fetchDataUsers();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-const PrivateRoute = useCallback (({ children }) => {
-  return prueba ? children : <Navigate to="/LogIn" />
-},[prueba]);
+  //función que trae los datos de la API plantas
+  const endpointPlantas = "/plantas.json";
+  const fetchDataPlantas = async () => {
+    const response = await fetch(endpointPlantas);
+    let data = await response.json();
+    //console.log(data);
+    setPlantasData(data);
+  };
+
+  //renderizado
+  useEffect(() => {
+    fetchDataPlantas();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const PrivateRoute = useCallback(
+    ({ children }) => {
+      return prueba ? children : <Navigate to="/LogIn" />;
+    },
+    [prueba]
+  );
 
   return (
     <div className="App">
@@ -83,7 +99,7 @@ const PrivateRoute = useCallback (({ children }) => {
                 isLoggedIn,
                 setIsLoggedIn,
                 prueba,
-                setPrueba
+                setPrueba,
               }}
             >
               <BrowserRouter>
@@ -92,9 +108,30 @@ const PrivateRoute = useCallback (({ children }) => {
                   <Route path="/" element={<Home />} />
                   <Route path="login" element={<LogIn />} />
                   <Route path="signup" element={<SignUp />} />
-                  <Route path="profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
-                  <Route path="plantForm" element={<PrivateRoute><PlantForm /></PrivateRoute>} />
-                  <Route path="/catalogue/" element={<PrivateRoute><Catalogue /></PrivateRoute>} />
+                  <Route
+                    path="profile"
+                    element={
+                      <PrivateRoute>
+                        <Profile />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="plantForm"
+                    element={
+                      <PrivateRoute>
+                        <PlantForm />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/catalogue/"
+                    element={
+                      <PrivateRoute>
+                        <Catalogue />
+                      </PrivateRoute>
+                    }
+                  />
                   <Route path="joincommunity" element={<JoinCommunity />} />
                   <Route path="ourteam" element={<OurTeam />} />
                   <Route path="workwithUs" element={<WorkWithUs />} />

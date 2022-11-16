@@ -3,12 +3,19 @@ import "../assets/styles/profile.css";
 import { Container, Form } from "react-bootstrap";
 
 //COMPONENTS
-
-//IMAGES
 import { Link } from "react-router-dom";
-
+import { useContext } from "react";
+import PlantasContext from "../context/PlantasContext";
 
 function Profile() {
+
+  const { plantasData, setPlantasData } = useContext(PlantasContext);
+
+  const deleteFav = (id) => {
+    const elemIndex = plantasData.findIndex((p) => p.id === id);
+    plantasData[elemIndex].fav = !plantasData[elemIndex].fav;
+    setPlantasData([...plantasData]);
+  };
 
   return (
     <>
@@ -50,11 +57,11 @@ function Profile() {
         </div>
 
         <Link to="/PlantForm">
-        
-        <button
+
+          <button
             type="button"
             className="login btn-submit btn-block mb-4"
-            >
+          >
             AGREGAR PLANTITA
           </button>
         </Link>
@@ -104,6 +111,39 @@ function Profile() {
             <p className="card-title">Prercio:</p>
           </div>
         </div>
+
+      </Container>
+
+
+      <Container className="d-flex flex-column align-items-start">
+        <h1>Fotos favoritas</h1>
+
+        {plantasData
+          .filter((plantFav) => plantFav.fav)
+          .map((plantFav, index) => (
+            <div className="card col-lg-3 col-md-6" key={plantFav.id}>
+              <img
+
+                className="card-img-top"
+                src={plantFav.img}
+                alt={plantFav.commonName}
+                onClick={() => deleteFav(plantFav.id)}
+                key={index}
+
+              />
+              <div className="card-body">
+                <p className="card-title"><strong>{plantFav.commonName}</strong></p>
+                <h6 className="card-subtitle">{plantFav.type}</h6>
+                <hr />
+
+                <p className="card-subtitle muted-text">{plantFav.name}</p>
+
+                <h4 className="card-subtitle"><strong>${plantFav.price}</strong></h4>
+                <hr />
+              </div>
+            </div>
+
+          ))};
 
       </Container>
 

@@ -3,7 +3,7 @@ import "../assets/styles/catalogue.css";
 import { Container, Form } from "react-bootstrap";
 
 //COMPONENTS
-import { useEffect, useContext, useState } from "react";
+import { useContext, useState } from "react";
 import CatalogueCard from "../components/CatalogueCard";
 import PlantasContext from "../context/PlantasContext";
 
@@ -12,26 +12,20 @@ function Catalogue() {
   const [searchPlantas, setSearchPlantas] = useState("");
   const { plantasData, setPlantasData } = useContext(PlantasContext);
 
-  //función que trae los datos de la API
-  const endpoint = "/plantas.json";
-  const fetchData = async () => {
-    const response = await fetch(endpoint);
-    let data = await response.json();
-    //console.log(data);
-    setPlantasData(data);
-  };
-
-  //renderizado
-  useEffect(() => {
-    fetchData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   //funcion de búsqueda por tipo de especie en el input
   const typeSearcher = (typeEvent) => {
     setSearchPlantas(typeEvent.target.value);
     //console.log(typeEvent.target.value);
   };
+
+   //Función que realiza un filtro para buscar tipos de especies
+   const resultado = !searchPlantas ? plantasData : plantasData.filter((dato) => dato.type
+   .toLowerCase()
+   //se excluye la busqueda con tilde para faciliar la expetiencia
+   .normalize("NFD")
+   .replace(/[\u0300-\u036f]/g, "")
+   .includes(searchPlantas.toLocaleLowerCase()));
 
   //función para filtrado los productos en el select (nombre y precio)
   const filterSearcher = (filterEvent) => {
@@ -52,14 +46,6 @@ function Catalogue() {
       setPlantasData([...plantasData]);
     }
   };
-
-  //Función que realiza un filtro para buscar tipos de especies
-  const resultado = !searchPlantas ? plantasData : plantasData.filter((dato) => dato.type
-    .toLowerCase()
-    //se excluye la busqueda con tilde para faciliar la expetiencia
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .includes(searchPlantas.toLocaleLowerCase()));
 
   return (
     <>
@@ -92,7 +78,6 @@ function Catalogue() {
           <option value="ordenarPrecioD">Precio Mayor a Menor</option>
           <option value="ordenarNombreA">Nombre común: de A - Z</option>
           <option value="ordenarNombreD">Nombre común: de Z - A</option>
-
         </Form.Select>
 
       </Container>

@@ -6,15 +6,11 @@ import { useContext, useState } from 'react';
 import ModalPlantDetails from "./ModalPlantDetails";
 import PlantasContext from "../context/PlantasContext";
 
-
-//IMAGES
-
 function CatalogueCard({ especie }) {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
   const { plantasData, setPlantasData } = useContext(PlantasContext);
 
   const setFav = (id) => {
@@ -35,9 +31,7 @@ function CatalogueCard({ especie }) {
           <p className="card-title"><strong>{especie.commonName}</strong></p>
           <h6 className="card-subtitle">{especie.type}</h6>
           <hr />
-
           <p className="card-subtitle muted-text">{especie.name}</p>
-
           <h4 className="card-subtitle"><strong>${especie.price}</strong></h4>
           <hr />
 
@@ -46,18 +40,14 @@ function CatalogueCard({ especie }) {
               className="login btn-submit btn-block mb-4"
               type="button"
               onClick={handleShow}
-              >
-                Ver más
+            >
+              Ver más
             </button>
 
-            <button
-              className="login btn-submit btn-block mb-4"
-              type="button"
-              onClick={handleShow}
-              >
-                <i className="fa-solid fa-cart-shopping"></i>
+            <button>
+              <i className="fa-solid fa-cart-shopping"></i>
             </button>
-          
+
             <svg
               onClick={() => setFav(especie.id)}
               width="40px"
@@ -81,5 +71,3 @@ function CatalogueCard({ especie }) {
 }
 
 export default CatalogueCard;
-
-
