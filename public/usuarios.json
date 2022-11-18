@@ -7,7 +7,8 @@
             "nombre": "Carlos",
             "userName": "cgarcia",
             "email": "cgarcia@gmail.com",
-            "password": "1234"
+            "password": "1234",
+            "fav": []
         },
 
         {
@@ -17,7 +18,8 @@
             "nombre": "Roberto",
             "userName": "rfernandez",
             "email": "rfernandez@gmail.com",
-            "password": "5678"
+            "password": "5678",
+            "fav": []
         },
 
         {
@@ -27,7 +29,8 @@
             "nombre": "Marta",
             "userName": "msantander",
             "email": "msantander@gmail.com",
-            "password": "9101"
+            "password": "9101",
+            "fav": []
         },
 
         {
@@ -37,7 +40,8 @@
             "nombre": "Laura",
             "userName": "lmiraflores",
             "email": "lmiraflores@gmail.com",
-            "password": "2345"
+            "password": "2345",
+            "fav": []
         }
     ]
 }

@@ -36,7 +36,6 @@ function SignUp() {
               { id: nanoid(), apellidoPaterno: newApellidoPaterno, apellidoMaterno: newApellidoMaterno, nombre: name, email: newEmail, password: newPassword }
             ]
           });
-         //falta validar con acceso a logIn, preguntar como.
           navigate("/logIn");
         }
       }
@@ -58,16 +57,21 @@ function SignUp() {
         />
       </div>
 
-      <Container className="d-flex justify-content-center mt-3">
-        <Form>
+      <Container 
+      className="d-flex justify-content-center mt-3"
+      >
 
+        <Form>
           <div className="form-outline mb-4">
             <input
               id="newName"
               className="form-control"
               required
             />
-            <label className="form-labelSign">Nombre</label>
+            <label 
+            className="form-labelSign">
+              Nombre
+            </label>
           </div>
 
           <div className="form-outline mb-4">
@@ -147,17 +151,21 @@ function SignUp() {
           </div>
 
           <button
-            type="button"
+            type="submit"
             className="login btn-submit btn-block mb-4"
             onClick={onSubmit}>
             REGÍSTRATE
           </button>
 
           <div className="text-center m-3">
-            <p>¿No eres miembro? <a className="anchorLogin" href="http://localhost:3000/SignUp">Regístrate aquí</a></p>
+            <p>¿No eres miembro? 
+              <a className="anchorLogin" href="http://localhost:3000/SignUp"> Regístrate aquí</a></p>
             <p>O ingresa por:</p>
 
-            <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
+            <button 
+            type="button" 
+            className="btn btn-link btn-floating mx-1 text-muted"
+            >
               <i className="fab fa-facebook-f fa-2x"></i>
             </button>
 
@@ -174,7 +182,6 @@ function SignUp() {
             >
               <i className="fab fa-twitter fa-2x"></i>
             </button>
-
           </div>
         </Form>
       </Container>

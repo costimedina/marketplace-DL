@@ -51,7 +51,6 @@ function Catalogue() {
     <>
 
       <Container className="d-flex justify-content-around px-5 mt-5 mb-2">
-
         <div className="form-outline mb-4">
           <input
             className="form-control"
@@ -79,11 +78,9 @@ function Catalogue() {
           <option value="ordenarNombreA">Nombre común: de A - Z</option>
           <option value="ordenarNombreD">Nombre común: de Z - A</option>
         </Form.Select>
-
       </Container>
 
       <Container>
-
         <div className="grilla-plantas">
           {resultado.map((publicacion, index) => (
             <CatalogueCard
@@ -92,7 +89,6 @@ function Catalogue() {
             />
           ))}
         </div>
-
       </Container>
 
     </>

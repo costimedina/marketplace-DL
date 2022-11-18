@@ -4,6 +4,7 @@
 
 .card-body{
   background-color: #FD9985;
+  padding-bottom: 0;
 }
 
 .d-flex {
@@ -26,3 +27,16 @@ ul {
   padding-left: 5px;
 }
 
+.btn-card{
+  background-color: #FD9985;
+  color: #F9F4F2;
+  width: 160px;
+  height: 40px;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.heart{
+  margin-right: 2rem;
+}

@@ -1,4 +1,4 @@
-//STYLES
+//ESTA PARTE DEL CODIGO NO VA ...SE ELIMINA
 
 //COMPONENTS
 import { useContext } from 'react';
@@ -16,12 +16,10 @@ function PlantDetails() {
   const planta = plantasData.find((register) => register.id === +id);
   console.log(planta);
 
-
-  //AGREGAR BOTON VER MAS, CARRITO Y WISHLIST
   return (
     <>
-      <Container className="d-flex justify-content-center px-5 mt-6 mb-5">
 
+      <Container className="d-flex justify-content-center px-5 mt-6 mb-5">
         <div className="card col-5" key={planta?.id}>
           <div className="card-block mt-3 mb-3">
             <h5 className="card-title text-center"><strong>Nombre:</strong> {planta?.name}</h5>
@@ -56,7 +54,6 @@ function PlantDetails() {
           </div>
 
         </div>
-
       </Container>
     </>
 

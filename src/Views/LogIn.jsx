@@ -13,10 +13,9 @@ function LogIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { usuariosData } = useContext(UsuariosContext);
-  const { setIsLoggedIn, setPrueba } = useContext(RegisteredUserContext);
+  const { setIsLoggedIn, setLoggedInUser } = useContext(RegisteredUserContext);
 
   const navigate = useNavigate();
-
 
   //función de búsqueda por mail
   const ingresarE = (e) => {
@@ -31,16 +30,17 @@ function LogIn() {
   };
 
   const handleClick = () => {
-    const found = usuariosData.usuarios?.find((ingresar) => ingresar.email === email && ingresar.password === password);
+    const foundUser = usuariosData.usuarios?.find((usuario) => usuario.email === email && usuario.password === password);
     //console.log(found);
-    if (found) {
+    if (foundUser) {
       setIsLoggedIn(true);
-      setPrueba(true);
+      //seguir para completar usuario perfil
+      setLoggedInUser(foundUser);
+
       navigate("/catalogue");
     } else {
       window.alert("credenciales inválidas");
     }
-
   };
 
   return (
@@ -49,9 +49,10 @@ function LogIn() {
         <h2>BIENVENIDO</h2>
       </div>
 
-      <Container className="d-flex justify-content-center">
+      <Container 
+      className="d-flex justify-content-center"
+      >
         <Form>
-
           <div className="form-outline mb-4">
             <input
               type="email"
@@ -63,13 +64,13 @@ function LogIn() {
             <label 
             className="form-labelLogin">
               Correo electrónico
-              </label>
+            </label>
           </div>
 
           <div className="form-outline mb-5">
             <input
               type="password"
-              id="form1Login"
+              id="form2Login"
               className="form-control"
               value={password}
               onChange={ingresarP}
@@ -77,7 +78,7 @@ function LogIn() {
             <label 
             className="form-labelLogin">
               Contraseña
-              </label>
+            </label>
           </div>
 
           <div className="row mb-4">
@@ -88,11 +89,9 @@ function LogIn() {
                   className="form-check-input"
                   type="checkbox" 
                   value=""
-                  id="form2Example31"
                 />
 
-                <label 
-                className="form-check-label"> Recuérdame </label>
+                <label className="form-check-label"> Recuérdame </label>
                 <a className="anchorPassword" href="www.google.com"> ¿Recuperar contraseña?</a>
               </div>
             </div>
@@ -109,21 +108,27 @@ function LogIn() {
             <p>¿No eres miembro? <a className="anchorLogin" href="http://localhost:3000/SignUp">Regístrate</a></p>
             <p>O ingresa por:</p>
 
-            <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
+            <button 
+            type="button" 
+            className="btn btn-link btn-floating mx-1 text-muted"
+            >
               <i className="fab fa-facebook-f fa-2x"></i>
             </button>
 
-            <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
+            <button 
+            type="button" 
+            className="btn btn-link btn-floating mx-1 text-muted"
+            >
               <i className="fab fa-google fa-2x"></i>
             </button>
 
-            <button type="button" className="btn btn-link btn-floating mx-1 text-muted">
+            <button 
+            type="button" 
+            className="btn btn-link btn-floating mx-1 text-muted">
               <i className="fab fa-twitter fa-2x"></i>
             </button>
           </div>
-
         </Form>
-
       </Container>
     </>
 

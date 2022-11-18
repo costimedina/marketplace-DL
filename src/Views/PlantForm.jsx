@@ -22,7 +22,6 @@ function PlantForm() {
 
       <Container className="d-flex justify-content-center mt-3">
         <Form>
-
           <div className="row form-outline mb-4">
             <div className="col">
               <input
@@ -113,7 +112,7 @@ function PlantForm() {
           <div className="row form-outline mb-4">
             <div className="col">
               <input
-                class="form-control"
+                className="form-control"
                 placeholder="Indicar ID"
               />
             </div>
@@ -129,15 +128,7 @@ function PlantForm() {
           <div className="custom-file">
             <input
               type="file"
-              className="custom-file-input"
-              id="customFile"
               />
-            
-            <label
-              className="custom-file-label"
-              for="customFile">
-              Sube una foto
-            </label>
           </div>
 
           <div className="d-flex justify-content-center mt-5">
@@ -147,7 +138,6 @@ function PlantForm() {
               PUBLICAR FICHA
             </button>
           </div>
-
         </Form>
       </Container>
     </>

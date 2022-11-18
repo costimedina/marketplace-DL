@@ -21,7 +21,6 @@ function JoinCommunity() {
       </div>
 
       <Container className="d-flex justify-content-around space-around mt-5 mb-5 flex-wrap">
-
         <div className="anchorHome home2">
           <a className="home2" href="https://www.google.com/"> <i className="fa-solid fa-podcast fa-3x"></i></a>
         </div>
@@ -33,7 +32,6 @@ function JoinCommunity() {
         <div className="anchorHome home4">
           <a className="home4" href="https://www.google.com/"> <i className="fab fa-facebook-f fa-3x"></i></a>
         </div>
-
       </Container>
 
     </>

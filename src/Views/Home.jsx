@@ -53,7 +53,7 @@ function Home() {
 
         <div>
           <div className="anchorHome home5">
-            <a className="home5" href="https://www.google.com/"><i class="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
+            <a className="home5" href="https://www.google.com/"><i className="fa-sharp fa-solid fa-leaf fa-3x"></i></a>
           </div>
           <p className="mt-2">HUERTO E</p>
         </div>
@@ -93,7 +93,6 @@ function Home() {
       </Container>
 
       <Container>
-
         <div className="px-5 mt-3 mb-5">
           <h2 className="mb-4 mt-5">ÚNETE A NUESTRA COMUNIDAD LA PLANTITA</h2>
 
@@ -102,14 +101,15 @@ function Home() {
           </h4>
         </div>
 
-        <Link to="/JoinCommunity">
+        <Link 
+        to="/JoinCommunity"
+        >
           <button
             type="button"
             className="btn-submit btn-block mb-5">
             ÚNETE
           </button>
         </Link>
-
       </Container>
 
       <div className="bannerHome">

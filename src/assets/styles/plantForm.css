@@ -1,19 +1,36 @@
-#product_id {
-    border: 1px solid #F5B85D;
-    width: 400px;
-  }
-  
-  .signUp {
-    background-color: #FD9985;
-    color: #F9F4F2;
-    width: 180px;
-    height: 40px;
-    border-radius: 0;
-    border: none;
-    font-size: 1rem;
-  }
-  
-  .signUp:hover {
-    box-shadow: 3px 3px 6px #999;
-  } 
-  
+.form-control {
+  border: 1px solid #F5B85D;
+}
+
+.signUp {
+  background-color: #FD9985;
+  color: #F9F4F2;
+  width: 180px;
+  height: 40px;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
+}
+
+.signUp:hover {
+  box-shadow: 3px 3px 6px #999;
+}
+
+.custom-file {
+  margin-left: -9.5rem;
+}
+
+input::file-selector-button {
+  background-color: #BE6731;
+  border: 0;
+  border-radius: 4px;
+  color: #F9F4F2;
+  padding: 0.30rem 0.20rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+}
+
+input::file-selector-button:hover {
+  background-position-x: 80%;
+  transform: scale(1.1);
+}

@@ -35,7 +35,8 @@ function App() {
   const [teamData, setTeamData] = useState([]);
   const [usuariosData, setUsuariosData] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [prueba, setPrueba] = useState(false);
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
 
   //función que trae los datos de la API usuarios
   const endpointUsers = "/usuarios.json";
@@ -60,6 +61,7 @@ function App() {
     //console.log(data);
     setPlantasData(data);
   };
+  console.log(plantasData)
 
   //renderizado
   useEffect(() => {
@@ -69,9 +71,9 @@ function App() {
 
   const PrivateRoute = useCallback(
     ({ children }) => {
-      return prueba ? children : <Navigate to="/LogIn" />;
+      return isLoggedIn ? children : <Navigate to="/LogIn" />;
     },
-    [prueba]
+    [isLoggedIn]
   );
 
   return (
@@ -98,12 +100,12 @@ function App() {
               value={{
                 isLoggedIn,
                 setIsLoggedIn,
-                prueba,
-                setPrueba,
+                loggedInUser,
+                setLoggedInUser,
               }}
             >
               <BrowserRouter>
-                {prueba ? <PrivateNavBar /> : <PublicNavBar />}
+                {isLoggedIn ? <PrivateNavBar /> : <PublicNavBar />}
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="login" element={<LogIn />} />
