@@ -30,19 +30,19 @@ function Catalogue() {
   //función para filtrado los productos en el select (nombre y precio)
   const filterSearcher = (filterEvent) => {
     let sortProducts = filterEvent.target.value;
-    if (sortProducts === "ordenarNombreA") {
-      plantasData.sort((a, b) => a.commonName.localeCompare(b.commonName));
-      setPlantasData([...plantasData]);
-    } else if (sortProducts === "ordenarNombreD") {
-      plantasData.sort((a, b) => b.commonName.localeCompare(a.commonName));
-      setPlantasData([...plantasData]);
-    }
-
     if (sortProducts === "ordenarPrecioA") {
       plantasData.sort((a, b) => a.price - b.price);
       setPlantasData([...plantasData]);
     } else if (sortProducts === "ordenarPrecioD") {
       plantasData.sort((a, b) => b.price - a.price);
+      setPlantasData([...plantasData]);
+    }
+
+    if (sortProducts === "ordenarNombreA") {
+      plantasData.sort((a, b) => a.commonName.localeCompare(b.commonName));
+      setPlantasData([...plantasData]);
+    } else if (sortProducts === "ordenarNombreD") {
+      plantasData.sort((a, b) => b.commonName.localeCompare(a.commonName));
       setPlantasData([...plantasData]);
     }
   };

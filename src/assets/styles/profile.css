@@ -3,6 +3,12 @@
   width: 500px;
 }
 
+input[type="text"]:disabled {
+  background: white;
+  color: #44BBA4;
+  
+}
+
 @-webkit-keyframes hvr-pulse-shrink {
   to {
     -webkit-transform: scale(0.9);

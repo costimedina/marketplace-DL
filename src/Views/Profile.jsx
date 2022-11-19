@@ -31,22 +31,27 @@ function Profile() {
         <Form>
           <div className="form-outline mb-4">
             <label className="form-label" id="perfil">Nombre</label>
-            <input type="text" id="form1Profile" className="form-control" defaultValue={loggedInUser.nombre} />
-
+            <input type="text" id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.nombre} />
           </div>
+
+          <div className="form-outline mb-4">
+            <label className="form-label" id="perfil">Apellidos</label>
+            <input type="text" id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.apellidoPaterno + " " + loggedInUser.apellidoMaterno} />
+          </div>
+
           <div className="form-outline mb-4">
             <label className="form-label">Correo electrónico</label>
-            <input type="email" id="form1Profile" className="form-control" defaultValue={loggedInUser.email} />
-
+            <input type="email" id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.email} />
           </div>
+
           <div className="form-outline mb-4">
             <label className="form-label">Teléfono de contacto</label>
-            <input type="number " id="form1Profile" className="form-control" />
-
+            <input type="number " id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.telefono} />
           </div>
+
           <div className="form-outline mb-4">
             <label className="form-label">Dirección</label>
-            <input type="text" id="form1Profile" className="form-control" />
+            <input type="text" id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.direccion} />
           </div>
         </Form>
       </Container>
@@ -59,19 +64,47 @@ function Profile() {
         <Link
           to="/PlantForm"
         >
-
           <button
             type="button"
             className="login btn-submit btn-block mb-4"
           >
             AGREGAR PLANTITA
           </button>
+
         </Link>
       </Container>
 
       <Container
-        className="d-flex justify-content-center px-5 mt-5 mb-2"
+        className="d-flex justify-content-center px-5 mb-2"
       >
+        <div className="card col-lg-3 col-md-6">
+          <img className="card-img-top"
+            src="https://imagenes.elpais.com/resizer/PN_ZuW3w1Tj-KMCBl4pImDfRAj0=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/L76UYHYCLLOQWMJW3Q5ZSAFY5M.jpg"
+            alt="foto planta"
+          />
+          <div className="card-body">
+            <p className="card-title">Nombre común:</p>
+            <hr />
+            <h5 className="card-title">Nombre científico:</h5>
+            <hr />
+            <p className="card-title">Prercio:</p>
+          </div>
+        </div>
+
+        <div className="card col-lg-3 col-md-6">
+          <img className="card-img-top"
+            src="https://imagenes.elpais.com/resizer/PN_ZuW3w1Tj-KMCBl4pImDfRAj0=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/L76UYHYCLLOQWMJW3Q5ZSAFY5M.jpg"
+            alt="foto planta"
+          />
+          <div className="card-body">
+            <p className="card-title">Nombre común:</p>
+            <hr />
+            <h5 className="card-title">Nombre científico:</h5>
+            <hr />
+            <p className="card-title">Prercio:</p>
+          </div>
+        </div>
+
         <div className="card col-lg-3 col-md-6">
           <img className="card-img-top"
             src="https://imagenes.elpais.com/resizer/PN_ZuW3w1Tj-KMCBl4pImDfRAj0=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/L76UYHYCLLOQWMJW3Q5ZSAFY5M.jpg"
@@ -87,12 +120,14 @@ function Profile() {
         </div>
       </Container>
 
-      <div className="mb-2 mt-5">
-        <h2>Mis Favoritos</h2>
-      </div>
+      <Container className="d-flex flex-column align-items-start">
+        <div className="mb-2 mt-5">
+          <h2>Mis Favoritos</h2>
+        </div>
+      </Container>
 
       <Container
-        className="d-flex justify-content-center px-5 mt-5 mb-2"
+        className="d-flex flex-wrap justify-content-center px-5 mb-2"
       >
         {plantasData
           .filter((plantFav) => plantFav.fav)
@@ -108,7 +143,7 @@ function Profile() {
                 <p className="card-subtitle muted-text">{plantFav.name}</p>
                 <br />
                 <h4 className="card-subtitle"><strong>${plantFav.price}</strong></h4>
-          
+
                 <svg
                   className="d-flex justify-content-left"
                   width="30px"
@@ -124,6 +159,7 @@ function Profile() {
               </div>
             </div>
           ))}
+
       </Container>
     </>
   );

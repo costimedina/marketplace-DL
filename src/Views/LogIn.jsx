@@ -7,6 +7,7 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RegisteredUserContext from "../context/RegisteredUserContext";
 import UsuariosContext from "../context/UsuariosContext";
+import PlantasContext from "../context/PlantasContext";
 
 function LogIn() {
 
@@ -14,6 +15,8 @@ function LogIn() {
   const [password, setPassword] = useState("");
   const { usuariosData } = useContext(UsuariosContext);
   const { setIsLoggedIn, setLoggedInUser } = useContext(RegisteredUserContext);
+  const { plantasData } = useContext(PlantasContext);
+
 
   const navigate = useNavigate();
 
@@ -32,11 +35,20 @@ function LogIn() {
   const handleClick = () => {
     const foundUser = usuariosData.usuarios?.find((usuario) => usuario.email === email && usuario.password === password);
     //console.log(found);
+    //prueba en frontend para demostrar funcionamiento del codigo
     if (foundUser) {
       setIsLoggedIn(true);
+      plantasData.forEach(plantita =>{
+        if (
+          foundUser.fav.includes(plantita.id)
+        ){
+          plantita.fav = true 
+        }else{
+          plantita.fav = false
+        }
+      })
       //seguir para completar usuario perfil
       setLoggedInUser(foundUser);
-
       navigate("/catalogue");
     } else {
       window.alert("credenciales inválidas");

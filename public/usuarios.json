@@ -8,7 +8,9 @@
             "userName": "cgarcia",
             "email": "cgarcia@gmail.com",
             "password": "1234",
-            "fav": []
+            "direccion": "Reusch #430",
+            "telefono": "+56 9 999 999 99", 
+            "fav": [19, 16, 24]
         },
 
         {
@@ -19,6 +21,8 @@
             "userName": "rfernandez",
             "email": "rfernandez@gmail.com",
             "password": "5678",
+            "direccion": "Reusch #430",
+            "telefono": "+56 9 999 999 99", 
             "fav": []
         },
 
@@ -30,7 +34,7 @@
             "userName": "msantander",
             "email": "msantander@gmail.com",
             "password": "9101",
-            "fav": []
+            "fav": [18, 3, 22, 25]
         },
 
         {

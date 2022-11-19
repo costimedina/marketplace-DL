@@ -61,7 +61,7 @@ function App() {
     //console.log(data);
     setPlantasData(data);
   };
-  console.log(plantasData)
+  //console.log(plantasData)
 
   //renderizado
   useEffect(() => {
