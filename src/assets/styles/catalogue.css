@@ -8,11 +8,28 @@
 #form1Catalogue {
   border: 1px solid #F5B85D;
   width: 400px;
-  margin-left: 8rem;
+  margin-left: 12rem;
 }
 
 #select1Catalogue {
   border: 1px solid #F5B85D;
   width: 400px;
-  margin-right: 8rem;
+  margin-right: 12rem;
+}
+
+@media (max-width: 800px) {
+  .searchFilters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: middle;
+  }
+
+  #form1Catalogue {
+    margin-left: 3.5rem;
+  }
+
+  #select1Catalogue {
+    margin-left: 3.5rem;
+  }
 }

@@ -13,7 +13,7 @@ import greenLogo from '../assets/images/logos/logo-color.png';
 
 function SignUp() {
 
-  const { usuariosData, setUsuariosData  } = useContext(UsuariosContext);
+  const { usuariosData, setUsuariosData } = useContext(UsuariosContext);
   const navigate = useNavigate();
 
   const onSubmit = () => {
@@ -33,7 +33,7 @@ function SignUp() {
           setUsuariosData({
             usuarios: [
               ...usuariosData.usuarios,
-              { id: nanoid(), apellidoPaterno: newApellidoPaterno, apellidoMaterno: newApellidoMaterno, nombre: name, email: newEmail, password: newPassword }
+              { id: nanoid(), apellidoPaterno: newApellidoPaterno, apellidoMaterno: newApellidoMaterno, nombre: name, email: newEmail, password: newPassword, fav: [] }
             ]
           });
           navigate("/logIn");
@@ -48,7 +48,7 @@ function SignUp() {
         <h2>CREA TU CUENTA AHORA</h2>
       </div>
       <div>
-        
+
         <img
           className="mb-4"
           height="180px"
@@ -57,8 +57,8 @@ function SignUp() {
         />
       </div>
 
-      <Container 
-      className="d-flex justify-content-center mt-3"
+      <Container
+        className="d-flex justify-content-center mt-3"
       >
 
         <Form>
@@ -68,8 +68,8 @@ function SignUp() {
               className="form-control"
               required
             />
-            <label 
-            className="form-labelSign">
+            <label
+              className="form-labelSign">
               Nombre
             </label>
           </div>
@@ -158,13 +158,13 @@ function SignUp() {
           </button>
 
           <div className="text-center m-3">
-            <p>¿No eres miembro? 
+            <p>¿No eres miembro?
               <a className="anchorLogin" href="http://localhost:3000/SignUp"> Regístrate aquí</a></p>
             <p>O ingresa por:</p>
 
-            <button 
-            type="button" 
-            className="btn btn-link btn-floating mx-1 text-muted"
+            <button
+              type="button"
+              className="btn btn-link btn-floating mx-1 text-muted"
             >
               <i className="fab fa-facebook-f fa-2x"></i>
             </button>
@@ -177,7 +177,7 @@ function SignUp() {
             </button>
 
             <button
-              type="button"
+              type="submit"
               className="btn btn-link btn-floating mx-1 text-muted"
             >
               <i className="fab fa-twitter fa-2x"></i>

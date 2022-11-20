@@ -1,12 +1,37 @@
 #form1Profile {
-  border: 1px solid #F5B85D;
-  width: 500px;
+  border: 2px solid #FD9985;
+  width: 400px;
 }
 
 input[type="text"]:disabled {
-  background: white;
-  color: #44BBA4;
-  
+  background: #8db4ad;
+  opacity: 80%;
+  color: #212225;
+}
+
+input[type="email"]:disabled {
+  background: #8db4ad;
+  opacity: 80%;
+  color: #212225;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  border-color: #FD9985;
+  border-width: 3rem;
+  align-items: center;
+}
+
+.btn-block {
+  background-color: #FD9985;
+  color: #F9F4F2;
+  width: 180px;
+  height: 35px;
+  border-radius: 0;
+  border: none;
+  font-size: 1rem;
 }
 
 @-webkit-keyframes hvr-pulse-shrink {
@@ -15,6 +40,7 @@ input[type="text"]:disabled {
     transform: scale(0.9);
   }
 }
+
 @keyframes hvr-pulse-shrink {
   to {
     -webkit-transform: scale(0.9);
@@ -29,6 +55,7 @@ path {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 path:hover, path:focus, path:active {
   -webkit-animation-name: hvr-pulse-shrink;
   animation-name: hvr-pulse-shrink;

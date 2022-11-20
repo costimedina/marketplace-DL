@@ -10,7 +10,8 @@
             "password": "1234",
             "direccion": "Reusch #430",
             "telefono": "+56 9 999 999 99", 
-            "fav": [19, 16, 24]
+            "fav": [19, 16, 24],
+            "userId": [8, 1, 13, 20]
         },
 
         {
@@ -23,7 +24,8 @@
             "password": "5678",
             "direccion": "Reusch #430",
             "telefono": "+56 9 999 999 99", 
-            "fav": []
+            "fav": [],
+            "hola": []
         },
 
         {
@@ -34,7 +36,8 @@
             "userName": "msantander",
             "email": "msantander@gmail.com",
             "password": "9101",
-            "fav": [18, 3, 22, 25]
+            "fav": [18, 3, 22, 25],
+            "hola": [8, 1, 13, 20]
         },
 
         {

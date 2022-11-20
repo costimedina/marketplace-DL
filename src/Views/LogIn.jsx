@@ -38,15 +38,15 @@ function LogIn() {
     //prueba en frontend para demostrar funcionamiento del codigo
     if (foundUser) {
       setIsLoggedIn(true);
-      plantasData.forEach(plantita =>{
+      plantasData.forEach(plantita => {
         if (
           foundUser.fav.includes(plantita.id)
-        ){
-          plantita.fav = true 
-        }else{
-          plantita.fav = false
+        ) {
+          plantita.fav = true;
+        } else {
+          plantita.fav = false;
         }
-      })
+      });
       //seguir para completar usuario perfil
       setLoggedInUser(foundUser);
       navigate("/catalogue");
@@ -61,8 +61,8 @@ function LogIn() {
         <h2>BIENVENIDO</h2>
       </div>
 
-      <Container 
-      className="d-flex justify-content-center"
+      <Container
+        className="d-flex justify-content-center"
       >
         <Form>
           <div className="form-outline mb-4">
@@ -73,8 +73,8 @@ function LogIn() {
               value={email}
               onChange={ingresarE}
             />
-            <label 
-            className="form-labelLogin">
+            <label
+              className="form-labelLogin">
               Correo electrónico
             </label>
           </div>
@@ -87,8 +87,8 @@ function LogIn() {
               value={password}
               onChange={ingresarP}
             />
-            <label 
-            className="form-labelLogin">
+            <label
+              className="form-labelLogin">
               Contraseña
             </label>
           </div>
@@ -99,7 +99,7 @@ function LogIn() {
               <div className="form-check">
                 <input
                   className="form-check-input"
-                  type="checkbox" 
+                  type="checkbox"
                   value=""
                 />
 
@@ -120,23 +120,23 @@ function LogIn() {
             <p>¿No eres miembro? <a className="anchorLogin" href="http://localhost:3000/SignUp">Regístrate</a></p>
             <p>O ingresa por:</p>
 
-            <button 
-            type="button" 
-            className="btn btn-link btn-floating mx-1 text-muted"
+            <button
+              type="button"
+              className="btn btn-link btn-floating mx-1 text-muted"
             >
               <i className="fab fa-facebook-f fa-2x"></i>
             </button>
 
-            <button 
-            type="button" 
-            className="btn btn-link btn-floating mx-1 text-muted"
+            <button
+              type="button"
+              className="btn btn-link btn-floating mx-1 text-muted"
             >
               <i className="fab fa-google fa-2x"></i>
             </button>
 
-            <button 
-            type="button" 
-            className="btn btn-link btn-floating mx-1 text-muted">
+            <button
+              type="button"
+              className="btn btn-link btn-floating mx-1 text-muted">
               <i className="fab fa-twitter fa-2x"></i>
             </button>
           </div>

@@ -7,12 +7,20 @@ a {
 }
 
 .active {
-  color: #F5B85D; 
+  color: #F5B85D;
   font-weight: bolder;
   text-shadow: 2px 2px #5B493D;
   text-decoration: none;
 }
 
-.d-flex h5{
+.d-flex h5 {
   padding: 0 1rem;
+}
+
+@media (max-width: 800px) {
+  .publicNavStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
 }

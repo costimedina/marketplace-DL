@@ -1,6 +1,7 @@
 [
     {
       "id":1,
+      "userId":[1,3],
       "name": "Acacia caven",
       "type": "Árbol",
       "commonName": "Espino",
@@ -11,8 +12,7 @@
       "topsoil": "Bien drenado.",
       "spreading": "3 metros.",
       "use": "En xerojardinería.",
-      "price":"59.990",
-      "fav": false
+      "price":"59.990"
     },
     {
       "id":2,
@@ -26,11 +26,10 @@
       "topsoil": "Amplio rango de suelos.",
       "spreading": "Como ejemplar único o cada 5 metros.",
       "use": "En xerojardinería.",
-      "price":"19.990",
-      "fav": false
+      "price":"19.990"
     },
     {
-      "id":3,
+      "id":3, 
       "name": "Aextoxicon punctatum",
       "type": "Árbol",
       "commonName": "Olivillo, Palo muerto, Aceitunillo",
@@ -41,8 +40,7 @@
       "topsoil": "Con buena retención de humedad.",
       "spreading": "3 metros.",
       "use": "Como arbol aislado o bosquetes.",
-      "price":"89.990",
-      "fav": false
+      "price":"89.990"
     },
     {
       "id":4,
@@ -56,8 +54,7 @@
       "topsoil": "No es exigente, bien drenado y con presencia de materia orgánica.",
       "spreading": "3 metros.",
       "use": "En xerojardinería con Stipa plumosa y arbustos esclerófilos.",
-      "price":"69.990",
-      "fav": false
+      "price":"69.990"
     },
     {
       "id":5,
@@ -71,8 +68,7 @@
       "topsoil": "Suelo pobres en nutrientes , permeables y arenosos.",
       "spreading": "Sin información.",
       "use": "Sin información.",
-      "price":"49.990",
-      "fav": false
+      "price":"49.990"
     },
     {
       "id":6,
@@ -86,8 +82,7 @@
       "topsoil": "Pobre con buen drenaje.",
       "spreading": "1 metro.",
       "use": "Con plantas de follajes verdes, rojos, con herbáceas y pastos ornamentales.",
-      "price":"14.990",
-      "fav": false
+      "price":"14.990"
     }, 
     {
       "id":7,
@@ -101,8 +96,7 @@
       "topsoil": "Tolera una amplia gama de suelos.",
       "spreading": "4 metros.",
       "use": "Como ejemplares aislados o en grupos.",
-      "price":"6.990",
-      "fav": false
+      "price":"6.990"
     },
     {
       "id":8,
@@ -116,8 +110,7 @@
       "topsoil": "Amplia gama de suelos con buen drenaje.",
       "spreading": "1.2 metros.",
       "use": "En xerojardinería y arbustos esclerófilos.",
-      "price":"65.990",
-      "fav": false
+      "price":"65.990"
     },
     {
       "id":9,
@@ -131,8 +124,7 @@
       "topsoil": "Pobre y con buen drenaje.",
       "spreading": "0.35 metros.",
       "use": "En xerojardinería como planta colorida de primer plano o dispersas entre la gravilla.",
-      "price":"12.990",
-      "fav": false
+      "price":"12.990"
     },
     {
       "id":10,
@@ -146,8 +138,7 @@
       "topsoil": "No exigente con el tipo de suelo siempre que esté bien drenado pues no tolera el exceso de agua.",
       "spreading": "2 metros.",
       "use": "En jardines para zonas áridas.",
-      "price":"45.990",
-      "fav": false
+      "price":"45.990"
     },
     {
       "id":11,
@@ -161,8 +152,7 @@
       "topsoil": "Amplia gama de suelos, desde arenas de duna hasta arcillosos, buen drenaje.",
       "spreading": "1.8 metros.",
       "use": "Planta solitaria o en grupos.",
-      "price":"2.990",
-      "fav": false
+      "price":"2.990"
     },
     {
       "id":12,
@@ -176,8 +166,7 @@
       "topsoil": "Franco, franco arenoso, bien drenado, tolera suelos pobres y secos.",
       "spreading": "1.2 metros.",
       "use": "Como planta solitaria y en grupos. Apta para maceta y rocalla.",
-      "price":"15.990",
-      "fav": false
+      "price":"15.990"
     },
     {
       "id":13,
@@ -191,11 +180,11 @@
       "topsoil": "Suelos bien drenados.",
       "spreading": "Sin información.",
       "use": "Al ser un aloe trepador, su distanciamiento depende del objetivo que se tenga.",
-      "price":"30.990",
-      "fav": false
+      "price":"30.990"
     },
     {
       "id":14,
+      "userId":[1,3],
       "name": "Sedum telephium “Autumn Joy",
       "type": "Cactáceas/Suculentas",
       "commonName": "Sedum rosado",
@@ -206,8 +195,7 @@
       "topsoil": "Bien drenado.",
       "spreading": "0.3 metros.",
       "use": "En grandes masas con Calamagrostis, Rudbeckia, Perovskia y Carex.",
-      "price":"5.990",
-      "fav": false
+      "price":"5.990"
     },
     {
       "id":15,
@@ -221,8 +209,7 @@
       "topsoil": "Arenosos, pedregosos, buen drenaje.",
       "spreading": "1 metro.",
       "use": "Planta solitaria, en macizos de la misma especie, rocallas, excelente para jardines costeros.",
-      "price":"9.990",
-      "fav": false
+      "price":"9.990"
     },
     {
       "id":16,
@@ -236,8 +223,7 @@
       "topsoil": "Bien drenado, fresco o seco. Mezclar con arena.",
       "spreading": "0.5 metros.",
       "use": "Como pantalla visual o para acentuar algún lugar del jardín.",
-      "price":"9.990",
-      "fav": false
+      "price":"9.990"
     },
     {
       "id":17,
@@ -251,11 +237,11 @@
       "topsoil": "Profundo y fértil, sustrato con resaca de río.",
       "spreading": "0.5 metros.",
       "use": "Empleada en los jardines para formar macizos vistosos, apta para contenedores, excelente cubresuelo e impide el crecimiento de malezas por su sistema radicular compacto.",
-      "price":"9.990",
-      "fav": false
+      "price":"9.990"
     },
     {
       "id":18,
+      "userId":[1,3],
       "name": "Lilium candidum",
       "type": "Herbáceas perennes",
       "commonName": "Lilium blanco o Azucena",
@@ -266,8 +252,7 @@
       "topsoil": "Rocosos, ricos y permeables.",
       "spreading": "0.4 metros.",
       "use": "Como flor de corta y en jardinería muy apreciada por su valor ornamental y su agradable olor, apropiada para cultivar en macizos de plantas herbáceas.",
-      "price":"45.990",
-      "fav": false
+      "price":"45.990"
     },
     {
       "id":19,
@@ -281,8 +266,7 @@
       "topsoil": "Amplia gama.",
       "spreading": "0.3 metros.",
       "use": "En jardines naturales o como foco de colores en los jardines tradicionales.",
-      "price":"77.990",
-      "fav": false
+      "price":"77.990"
     },
     {
       "id":20,
@@ -296,8 +280,7 @@
       "topsoil": "Arcilloso, bien drenado y fértil.",
       "spreading": "Sin información.",
       "use": "Junto con otras herbáceas como Salvia sclarea, Crocosmia, Eryngium, Gaura y pastos ornamentales.",
-      "price":"100.990",
-      "fav": false
+      "price":"100.990"
     },
     {
       "id":21,
@@ -311,8 +294,7 @@
       "topsoil": "Arenosos, bien drenados y húmedos.",
       "spreading": "0.6 metros.",
       "use": "Dado su color cobrizo se recomienda asociarlo con herbáceas perennes de floración llamativa.",
-      "price":"1.990",
-      "fav": false
+      "price":"1.990"
     },
     {
       "id":22,
@@ -326,8 +308,7 @@
       "topsoil": "Arcilloso, bien drenado y fértil.",
       "spreading": "Sin información.",
       "use": "Junto con otras herbáceas como Salvia sclarea, Crocosmia, Eryngium, Gaura y pastos ornamentales.",
-      "price":"1.990",
-      "fav": false
+      "price":"1.990"
     },
     {
       "id":23,
@@ -341,8 +322,7 @@
       "topsoil": "Prefiere suelos húmedos, tolera encharcamientos.",
       "spreading": "Sin información.",
       "use": "Muy ornamental, por su porte rústico y coloración. Se luce aislado o agrupado en amplios espacios.",
-      "price":"7.990",
-      "fav": false
+      "price":"7.990"
     },
     {
       "id":24,
@@ -356,8 +336,7 @@
       "topsoil": "Desde suelos pobres, erosionados hasta fértiles y profundos.",
       "spreading": "0.6 metros.",
       "use": "Para suelos muy degradados, muy usada para la restauración de estos, en jardinería puede combinarse con cualquier herbácea perenne.",
-      "price":"7.990",
-      "fav": false
+      "price":"7.990"
     },
     {
       "id":25,
@@ -371,7 +350,6 @@
       "topsoil": "Bien drenado.",
       "spreading": "0.6 metros.",
       "use": "Ideal para control de erosión, en macizos tiene un impresionante efecto en floración, apto para macetas.",
-      "price":"16.990",
-      "fav": false
+      "price":"16.990"
     }    
   ]

@@ -19,13 +19,13 @@ function Catalogue() {
     //console.log(typeEvent.target.value);
   };
 
-   //Función que realiza un filtro para buscar tipos de especies
-   const resultado = !searchPlantas ? plantasData : plantasData.filter((dato) => dato.type
-   .toLowerCase()
-   //se excluye la busqueda con tilde para faciliar la expetiencia
-   .normalize("NFD")
-   .replace(/[\u0300-\u036f]/g, "")
-   .includes(searchPlantas.toLocaleLowerCase()));
+  //Función que realiza un filtro para buscar tipos de especies
+  const resultado = !searchPlantas ? plantasData : plantasData.filter((dato) => dato.type
+    .toLowerCase()
+    //se excluye la busqueda con tilde para faciliar la expetiencia
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .includes(searchPlantas.toLocaleLowerCase()));
 
   //función para filtrado los productos en el select (nombre y precio)
   const filterSearcher = (filterEvent) => {
@@ -50,8 +50,9 @@ function Catalogue() {
   return (
     <>
 
-      <Container className="d-flex justify-content-around px-5 mt-5 mb-2">
-        <div className="form-outline mb-4">
+      <Container className="searchFilters d-flex mt-5 mb-2">
+
+        <div className="search1 form-outline mb-4">
           <input
             className="form-control"
             type="text"
@@ -63,12 +64,12 @@ function Catalogue() {
         </div>
 
         <Form.Select
-          className="form-select mb-4"
+          className="search2 form-select mb-4"
           id="select1Catalogue"
           aria-label="Default select example"
           value={searchPlantas}
           onChange={filterSearcher}
-          >
+        >
 
           <option value="">
             Categorías

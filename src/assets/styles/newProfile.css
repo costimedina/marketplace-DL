@@ -1,0 +1,11 @@
+input[type="text"]:disabled {
+  background: #8db4ad;
+  opacity: 80%;
+  color: #212225;
+}
+
+input[type="email"]:disabled {
+  background: #8db4ad;
+  opacity: 80%;
+  color: #212225;
+}

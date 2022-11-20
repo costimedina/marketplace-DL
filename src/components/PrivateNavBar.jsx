@@ -24,7 +24,7 @@ function PrivateNavBar() {
 
   return (
     <Navbar
-      className="d-flex justify-content-between px-5"
+      className="privateNavStyle d-flex justify-content-between px-3"
       variant="light"
       style={{ background: "#212225" }}
     >
@@ -45,21 +45,21 @@ function PrivateNavBar() {
         </Navbar.Brand>
       </NavLink>
 
-      <Nav 
-      className="d-flex px-4">
+      <Nav
+        className="subNavStyled-flex px-4">
 
         <NavLink
-          end 
+          end
           className={setActiveClass}
           to="Profile"
         >
-          <h5>
-            <i 
-            className="fa-sharp fa-solid fa-user">
-              </i> 
-              {"  "}
-              Tu perfil
-              </h5>
+          <h5 className="responsiveFont">
+            <i
+              className="fa-sharp fa-solid fa-user">
+            </i>
+            {"  "}
+            Tu perfil
+          </h5>
         </NavLink>
         {" - "}
 
@@ -67,12 +67,10 @@ function PrivateNavBar() {
           end className={setActiveClass}
           to="Catalogue"
         >
-          <h5><i 
-          className="fa-sharp fa-solid fa-seedling">
-            </i> 
+          <h5 className="responsiveFont"><i className="fa-sharp fa-solid fa-seedling"></i>
             {"  "}
             Galería
-            </h5>
+          </h5>
         </NavLink>
         {" - "}
 
@@ -80,8 +78,8 @@ function PrivateNavBar() {
           type="button"
           className="logOut"
           onClick={handleClick}>
-          <i 
-          className="fa-sharp fa-solid fa-power-off">
+          <i
+            className="fa-sharp fa-solid fa-power-off">
           </i>
           {"  "}
           Cerrar Sesión

@@ -4,10 +4,10 @@ import Modal from 'react-bootstrap/Modal';
 function ModalPlantDetails({ show, handleClose, planta }) {
 
   return (
-    <Modal 
-    show={show} 
-    onHide={handleClose} 
-    animation={false}
+    <Modal
+      show={show}
+      onHide={handleClose}
+      animation={false}
     >
 
       <Modal.Header closeButton>

@@ -128,7 +128,7 @@ function PlantForm() {
           <div className="custom-file">
             <input
               type="file"
-              />
+            />
           </div>
 
           <div className="d-flex justify-content-center mt-5">

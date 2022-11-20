@@ -21,14 +21,14 @@ function Header() {
           <h2 className="mt-2 mb-5">REVISA NUESTRAS ESPECIES EN EL CATÁLOGO Y CONSIGUE TUS SIGUIENTES PLANTITAS</h2>
 
           <Link to="/SignUp">
-            <button 
-            type="button" 
-            className="btn-submit btn-block mb-4" >INGRESA AQUÍ</button>
+            <button
+              type="button"
+              className="btn-submit btn-block mb-4" >INGRESA AQUÍ</button>
           </Link>
 
         </div>
       </div>
-   
+
     </>
 
   );

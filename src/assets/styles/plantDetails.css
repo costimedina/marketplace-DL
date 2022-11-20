@@ -1,27 +1,27 @@
 .contenedor-details {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.desc{
-	text-align: justify;
-	padding-left: 5px;
+.desc {
+  text-align: justify;
+  padding-left: 5px;
 }
 
 .btn-warning {
-	background-color: #c32105;
-	border: 0px;
-	color: white;
+  background-color: #c32105;
+  border: 0px;
+  color: white;
 }
 
-.precio-details{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+.precio-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.precio-details h3{
-	font-size: 30px;
-	font-weight: 600;
-	padding-top: 12px;
+.precio-details h3 {
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 12px;
 }

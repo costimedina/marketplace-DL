@@ -26,8 +26,8 @@ function WorkWithUs() {
         />
       </div>
 
-      <Container 
-      className="d-flex justify-content-center mt-3"
+      <Container
+        className="d-flex justify-content-center mt-3"
       >
         <Form>
           <div className="form-outline mb-4">

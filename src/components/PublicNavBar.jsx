@@ -15,17 +15,17 @@ function PublicNavBar() {
   return (
 
     <Navbar
-      className="d-flex justify-content-between px-5"
+      className="publicNavStyle d-flex justify-content-between px-5"
       variant="light"
       style={{ background: "#212225" }}
     >
 
-      <NavLink 
-      end className={setActiveClass} 
-      to="/" 
+      <NavLink
+        end className={setActiveClass}
+        to="/"
       >
-        <Navbar.Brand 
-        className="d-flex px-5"
+        <Navbar.Brand
+          className="d-flex px-5"
         >
           <img
             width="80"
@@ -37,13 +37,13 @@ function PublicNavBar() {
 
       <Nav className="d-flex px-4">
 
-        <NavLink 
-        end className={setActiveClass} 
-        to="LogIn"
+        <NavLink
+          end className={setActiveClass}
+          to="LogIn"
         >
           <h5><i className="fa-sharp fa-solid fa-user"></i> Ingresar</h5>
         </NavLink>
-        
+
         <NavLink className={setActiveClass} to="SignUp">
           <h5><i className="fa-sharp fa-solid fa-right-to-bracket"></i> Registrarse</h5>
         </NavLink>

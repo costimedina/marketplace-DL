@@ -29,6 +29,7 @@ import JoinCommunity from "./Views/JoinCommunity";
 import OurTeam from "./Views/OurTeam";
 import WorkWithUs from "./Views/WorkWithUs";
 import NotFound from "./Views/NotFound";
+import NewProfile from "./Views/NewProfile";
 
 function App() {
   const [plantasData, setPlantasData] = useState([]);
@@ -36,7 +37,6 @@ function App() {
   const [usuariosData, setUsuariosData] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loggedInUser, setLoggedInUser] = useState(null);
-
 
   //función que trae los datos de la API usuarios
   const endpointUsers = "/usuarios.json";
@@ -110,6 +110,7 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="login" element={<LogIn />} />
                   <Route path="signup" element={<SignUp />} />
+                  <Route path="newProfile" element={<NewProfile />} />
                   <Route
                     path="profile"
                     element={

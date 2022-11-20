@@ -1,32 +1,57 @@
 a {
-    text-decoration: none;
-    color: #F9F4F2;
-    font-family: 'Economica', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  text-decoration: none;
+  color: #F9F4F2;
+  font-family: 'Economica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .active {
-    color: #F5B85D;
-    font-weight: bolder;
-    text-shadow: 2px 2px #5B493D;
-    text-decoration: none;
+  color: #F5B85D;
+  font-weight: bolder;
+  text-shadow: 2px 2px #5B493D;
+  text-decoration: none;
 }
 
 .d-flex h5 {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .logOut {
-    background-color: #212225;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    text-decoration: none;
-    color: #F9F4F2;
-    font-family: 'Economica', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 2px;
+  background-color: #212225;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  color: #F9F4F2;
+  font-family: 'Economica', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 800px) {
+  .privateNavStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+
+  .subNavStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .responsiveFont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logOut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

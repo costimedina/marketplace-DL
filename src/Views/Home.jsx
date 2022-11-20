@@ -101,8 +101,8 @@ function Home() {
           </h4>
         </div>
 
-        <Link 
-        to="/JoinCommunity"
+        <Link
+          to="/JoinCommunity"
         >
           <button
             type="button"

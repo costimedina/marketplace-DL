@@ -9,7 +9,7 @@ import PlantasContext from '../context/PlantasContext';
 //IMAGES 
 
 function PlantDetails() {
-  
+
   const { id } = useParams();
   const { addToCart, plantasData } = useContext(PlantasContext);
 

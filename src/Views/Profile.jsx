@@ -11,7 +11,6 @@ import RegisteredUserContext from "../context/RegisteredUserContext";
 function Profile() {
 
   const { plantasData, setPlantasData } = useContext(PlantasContext);
-
   const { loggedInUser } = useContext(RegisteredUserContext);
 
   const deleteFav = (id) => {
@@ -19,7 +18,7 @@ function Profile() {
     plantasData[elemIndex].fav = !plantasData[elemIndex].fav;
     setPlantasData([...plantasData]);
   };
-  console.log(setPlantasData);
+  console.log(loggedInUser);
   return (
     <>
 
@@ -27,7 +26,26 @@ function Profile() {
         <h2>BIENVENIDO A TU PERFIL</h2>
       </div>
 
-      <Container className="d-flex justify-content-around px-5 flex-wrap">
+      <Container className="d-flex px-5 flex-wrap justify-content-lg-around justify-content-sm-between">
+        <div className="profile">
+          <img
+            className="d-flex mb-4"
+            height="180px"
+            src="https://st3.depositphotos.com/1007566/33313/v/450/depositphotos_333131692-stock-illustration-cute-cactus-plant-in-pot.jpg"
+            alt="certificacion"
+          />
+
+          <Link
+            to="/NewProfile"
+          >
+            <button
+              type="button"
+              className="btn-block mb-5">
+              EDITAR PERFIL
+            </button>
+          </Link>
+        </div>
+
         <Form>
           <div className="form-outline mb-4">
             <label className="form-label" id="perfil">Nombre</label>
@@ -46,7 +64,7 @@ function Profile() {
 
           <div className="form-outline mb-4">
             <label className="form-label">Teléfono de contacto</label>
-            <input type="number " id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.telefono} />
+            <input type="text" id="form1Profile" className="form-control" disabled defaultValue={loggedInUser.telefono} />
           </div>
 
           <div className="form-outline mb-4">
@@ -70,54 +88,31 @@ function Profile() {
           >
             AGREGAR PLANTITA
           </button>
-
         </Link>
       </Container>
 
-      <Container
-        className="d-flex justify-content-center px-5 mb-2"
-      >
-        <div className="card col-lg-3 col-md-6">
-          <img className="card-img-top"
-            src="https://imagenes.elpais.com/resizer/PN_ZuW3w1Tj-KMCBl4pImDfRAj0=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/L76UYHYCLLOQWMJW3Q5ZSAFY5M.jpg"
-            alt="foto planta"
-          />
-          <div className="card-body">
-            <p className="card-title">Nombre común:</p>
-            <hr />
-            <h5 className="card-title">Nombre científico:</h5>
-            <hr />
-            <p className="card-title">Prercio:</p>
-          </div>
-        </div>
+      <Container className="d-flex flex-wrap justify-content-center px-5 mb-3">
+        {plantasData
+          .filter((plantFav) => plantFav.userId)
+          .map((plantFav) => (
 
-        <div className="card col-lg-3 col-md-6">
-          <img className="card-img-top"
-            src="https://imagenes.elpais.com/resizer/PN_ZuW3w1Tj-KMCBl4pImDfRAj0=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/L76UYHYCLLOQWMJW3Q5ZSAFY5M.jpg"
-            alt="foto planta"
-          />
-          <div className="card-body">
-            <p className="card-title">Nombre común:</p>
-            <hr />
-            <h5 className="card-title">Nombre científico:</h5>
-            <hr />
-            <p className="card-title">Prercio:</p>
-          </div>
-        </div>
+            <div className="card col-lg-3 col-md-6" key={plantFav.id}>
+              <img
+                className="card-img-top"
+                src={plantFav.img}
+                alt={plantFav.commonName}
+              />
+              <div className="card-body">
+                <p className="card-subtitle muted-text"><strong>{plantFav.name}</strong></p>
+                <hr />
+                <p className="card-subtitle muted-text">{plantFav.commonName}</p>
+                <br />
+                <h4 className="card-subtitle"><strong>${plantFav.price}</strong></h4>
+                <br />
+              </div>
+            </div>
+          ))}
 
-        <div className="card col-lg-3 col-md-6">
-          <img className="card-img-top"
-            src="https://imagenes.elpais.com/resizer/PN_ZuW3w1Tj-KMCBl4pImDfRAj0=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/L76UYHYCLLOQWMJW3Q5ZSAFY5M.jpg"
-            alt="foto planta"
-          />
-          <div className="card-body">
-            <p className="card-title">Nombre común:</p>
-            <hr />
-            <h5 className="card-title">Nombre científico:</h5>
-            <hr />
-            <p className="card-title">Prercio:</p>
-          </div>
-        </div>
       </Container>
 
       <Container className="d-flex flex-column align-items-start">
@@ -126,9 +121,7 @@ function Profile() {
         </div>
       </Container>
 
-      <Container
-        className="d-flex flex-wrap justify-content-center px-5 mb-2"
-      >
+      <Container className="d-flex flex-wrap justify-content-center px-5 mb-2">
         {plantasData
           .filter((plantFav) => plantFav.fav)
           .map((plantFav, index) => (
@@ -140,7 +133,9 @@ function Profile() {
                 alt={plantFav.commonName}
               />
               <div className="card-body">
-                <p className="card-subtitle muted-text">{plantFav.name}</p>
+                <p className="card-subtitle muted-text"><strong>{plantFav.name}</strong></p>
+                <hr />
+                <p className="card-subtitle muted-text">{plantFav.commonName}</p>
                 <br />
                 <h4 className="card-subtitle"><strong>${plantFav.price}</strong></h4>
 
@@ -159,7 +154,6 @@ function Profile() {
               </div>
             </div>
           ))}
-
       </Container>
     </>
   );
